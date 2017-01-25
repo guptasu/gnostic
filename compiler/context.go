@@ -29,13 +29,13 @@ import (
 	yaml "gopkg.in/yaml.v2"
 )
 
-type PatternFieldProtoGenerator struct {
-	PatternFieldName   string
-	ProtoGeneratorName string
+type CustomAnyProtoGenerator struct {
+	FieldName     string
+	GeneratorName string
 }
 
-func (pluginCall *PatternFieldProtoGenerator) Perform(in interface{}) (*any.Any, error) {
-	if pluginCall.ProtoGeneratorName != "" {
+func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) (*any.Any, error) {
+	if customAnyProtoGenerator.GeneratorName != "" {
 		binary, _ := yaml.Marshal(in)
 
 		request := &vendorextension.VendorExtensionHandlerRequest{}
@@ -54,7 +54,7 @@ func (pluginCall *PatternFieldProtoGenerator) Perform(in interface{}) (*any.Any,
 		request.Wrapper.Yaml = string(binary)
 		requestBytes, _ := proto.Marshal(request)
 
-		cmd := exec.Command(pluginCall.ProtoGeneratorName)
+		cmd := exec.Command(customAnyProtoGenerator.GeneratorName)
 		cmd.Stdin = bytes.NewReader(requestBytes)
 		output, err := cmd.Output()
 		if err != nil {
@@ -69,7 +69,7 @@ func (pluginCall *PatternFieldProtoGenerator) Perform(in interface{}) (*any.Any,
 			return nil, err
 		}
 		if len(response.Error) != 0 {
-			message := fmt.Sprintf("Errors when parsing: %+v for field %s by vendor extension handler %s. Details %+v", in, pluginCall.PatternFieldName, pluginCall.ProtoGeneratorName, strings.Join(response.Error, ","))
+			message := fmt.Sprintf("Errors when parsing: %+v for field %s by vendor extension handler %s. Details %+v", in, customAnyProtoGenerator.FieldName, customAnyProtoGenerator.GeneratorName, strings.Join(response.Error, ","))
 			return nil, errors.New(message)
 		}
 		return response.Value, nil
@@ -81,16 +81,16 @@ type Context struct {
 	Parent *Context
 	Name   string
 
-	// TODO: Figure out a better way to pass the patternFieldProtoGenerators to the generated compiler.
-	PatternFieldProtoGenerators *[]PatternFieldProtoGenerator
+	// TODO: Figure out a better way to pass the CustomAnyProtoGenerator to the generated compiler.
+	CustomAnyProtoGenerators *[]CustomAnyProtoGenerator
 }
 
-func NewContextWithPatternFieldProtoGenerators(name string, parent *Context, patternFieldProtoGenerators *[]PatternFieldProtoGenerator) *Context {
-	return &Context{Name: name, Parent: parent, PatternFieldProtoGenerators: patternFieldProtoGenerators}
+func NewContextWithCustomAnyProtoGenerators(name string, parent *Context, customAnyProtoGenerators *[]CustomAnyProtoGenerator) *Context {
+	return &Context{Name: name, Parent: parent, CustomAnyProtoGenerators: customAnyProtoGenerators}
 }
 
 func NewContext(name string, parent *Context) *Context {
-	return &Context{Name: name, Parent: parent, PatternFieldProtoGenerators: parent.PatternFieldProtoGenerators}
+	return &Context{Name: name, Parent: parent, CustomAnyProtoGenerators: parent.CustomAnyProtoGenerators}
 }
 
 func (context *Context) Description() string {

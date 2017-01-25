@@ -146,7 +146,7 @@ func main() {
 				os.Exit(0)
 			}
 
-			newObject, err := NewMyTestDocument(info, compiler.NewContextWithPatternFieldProtoGenerators("$root", nil, nil))
+			newObject, err := NewMyTestDocument(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 			if err != nil {
 				response.Error = append(response.Error, err.Error())
 				responseBytes, _ := proto.Marshal(response)

@@ -127,12 +127,12 @@ func NewApiKeySecurity(in interface{}, context *compiler.Context) (*ApiKeySecuri
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -206,12 +206,12 @@ func NewBasicAuthenticationSecurity(in interface{}, context *compiler.Context) (
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -312,12 +312,12 @@ func NewBodyParameter(in interface{}, context *compiler.Context) (*BodyParameter
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -394,12 +394,12 @@ func NewContact(in interface{}, context *compiler.Context) (*Contact, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -441,12 +441,12 @@ func NewDefault(in interface{}, context *compiler.Context) (*Default, error) {
 				pair.Name = k
 				var err error
 				handled := false
-				if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-					for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-						if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+				if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+					for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+						if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 							result := &Any{}
 							// ADD error handling here
-							result.Value, err = patternFieldProtoGenerator.Perform(v)
+							result.Value, err = customAnyProtoGenerator.Perform(v)
 							if err != nil {
 								errors = append(errors, err)
 							}
@@ -685,12 +685,12 @@ func NewDocument(in interface{}, context *compiler.Context) (*Document, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -732,12 +732,12 @@ func NewExamples(in interface{}, context *compiler.Context) (*Examples, error) {
 				pair.Name = k
 				var err error
 				handled := false
-				if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-					for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-						if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+				if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+					for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+						if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 							result := &Any{}
 							// ADD error handling here
-							result.Value, err = patternFieldProtoGenerator.Perform(v)
+							result.Value, err = customAnyProtoGenerator.Perform(v)
 							if err != nil {
 								errors = append(errors, err)
 							}
@@ -810,12 +810,12 @@ func NewExternalDocs(in interface{}, context *compiler.Context) (*ExternalDocs, 
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -954,12 +954,12 @@ func NewFileSchema(in interface{}, context *compiler.Context) (*FileSchema, erro
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1237,12 +1237,12 @@ func NewFormDataParameterSubSchema(in interface{}, context *compiler.Context) (*
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1490,12 +1490,12 @@ func NewHeader(in interface{}, context *compiler.Context) (*Header, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1764,12 +1764,12 @@ func NewHeaderParameterSubSchema(in interface{}, context *compiler.Context) (*He
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1908,12 +1908,12 @@ func NewInfo(in interface{}, context *compiler.Context) (*Info, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2039,12 +2039,12 @@ func NewLicense(in interface{}, context *compiler.Context) (*License, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2574,12 +2574,12 @@ func NewOauth2AccessCodeSecurity(in interface{}, context *compiler.Context) (*Oa
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2680,12 +2680,12 @@ func NewOauth2ApplicationSecurity(in interface{}, context *compiler.Context) (*O
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2786,12 +2786,12 @@ func NewOauth2ImplicitSecurity(in interface{}, context *compiler.Context) (*Oaut
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2892,12 +2892,12 @@ func NewOauth2PasswordSecurity(in interface{}, context *compiler.Context) (*Oaut
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3108,12 +3108,12 @@ func NewOperation(in interface{}, context *compiler.Context) (*Operation, error)
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3336,12 +3336,12 @@ func NewPathItem(in interface{}, context *compiler.Context) (*PathItem, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3616,12 +3616,12 @@ func NewPathParameterSubSchema(in interface{}, context *compiler.Context) (*Path
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3671,12 +3671,12 @@ func NewPaths(in interface{}, context *compiler.Context) (*Paths, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3928,12 +3928,12 @@ func NewPrimitivesItems(in interface{}, context *compiler.Context) (*PrimitivesI
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4240,12 +4240,12 @@ func NewQueryParameterSubSchema(in interface{}, context *compiler.Context) (*Que
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4337,12 +4337,12 @@ func NewResponse(in interface{}, context *compiler.Context) (*Response, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4468,12 +4468,12 @@ func NewResponses(in interface{}, context *compiler.Context) (*Responses, error)
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4836,12 +4836,12 @@ func NewSchema(in interface{}, context *compiler.Context) (*Schema, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -5098,12 +5098,12 @@ func NewTag(in interface{}, context *compiler.Context) (*Tag, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -5159,12 +5159,12 @@ func NewVendorExtension(in interface{}, context *compiler.Context) (*VendorExten
 				pair.Name = k
 				var err error
 				handled := false
-				if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-					for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-						if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+				if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+					for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+						if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 							result := &Any{}
 							// ADD error handling here
-							result.Value, err = patternFieldProtoGenerator.Perform(v)
+							result.Value, err = customAnyProtoGenerator.Perform(v)
 							if err != nil {
 								errors = append(errors, err)
 							}
@@ -5258,12 +5258,12 @@ func NewXml(in interface{}, context *compiler.Context) (*Xml, error) {
 					pair.Name = k
 					var err error
 					handled := false
-					if context.PatternFieldProtoGenerators != nil && len(*(context.PatternFieldProtoGenerators)) != 0 {
-						for _, patternFieldProtoGenerator := range *(context.PatternFieldProtoGenerators) {
-							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
+					if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {
+						for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {
+							if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Value, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = customAnyProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}

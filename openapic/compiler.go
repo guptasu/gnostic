@@ -126,6 +126,7 @@ Options:
   --errors_out=PATH   Write compilation errors to the specified location.
   --PLUGIN_out=PATH   Run the plugin named openapi_PLUGIN and write results to the specified location.
   --resolve_refs      Explicitly resolve $ref references (this could have problems with recursive definitions).
+  --custom_any_proto_gen=FIELD_NAME:GENERATOR_NAME  Custom impementation of generating google.protobuf.Any types for specific file FIELD_NAME.
 `
 	// default values for all options
 	sourceName := ""
@@ -135,13 +136,13 @@ Options:
 	errorPath := ""
 	pluginCalls := make([]*PluginCall, 0)
 	resolveReferences := false
-	patternFieldProtoGenerator := make([]compiler.PatternFieldProtoGenerator, 0)
+	customAnyProtoGenerator := make([]compiler.CustomAnyProtoGenerator, 0)
 
 	// arg processing matches patterns of the form "--PLUGIN_out=PATH"
 	plugin_regex, err := regexp.Compile("--(.+)_out=(.+)")
 
-	// arg processing matches patterns of the form "--custom_any_type=FIELNAME:INSTALLED_TOOL_TO_GENERATE_ANY_TYPE_FOR_FIELNAME"
-	patternFieldProtoGenerator_regex, err := regexp.Compile("--custom_any_type=(.+):(.+)")
+	// arg processing matches patterns of the form "--custom_any_proto_gen=FIELNAME:INSTALLED_TOOL_TO_GENERATE_ANY_TYPE_FOR_FIELNAME"
+	customAnyProtoGenerator_regex, err := regexp.Compile("--custom_any_proto_gen=(.+):(.+)")
 
 	for i, arg := range os.Args {
 		if i == 0 {
@@ -164,10 +165,10 @@ Options:
 				pluginCall := &PluginCall{Name: pluginName, Output: outputName}
 				pluginCalls = append(pluginCalls, pluginCall)
 			}
-		} else if m = patternFieldProtoGenerator_regex.FindSubmatch([]byte(arg)); m != nil {
+		} else if m = customAnyProtoGenerator_regex.FindSubmatch([]byte(arg)); m != nil {
 			fieldName := string(m[1])
 			handlerName := string(m[2])
-			patternFieldProtoGenerator = append(patternFieldProtoGenerator, compiler.PatternFieldProtoGenerator{PatternFieldName: fieldName, ProtoGeneratorName: handlerName})
+			customAnyProtoGenerator = append(customAnyProtoGenerator, compiler.CustomAnyProtoGenerator{FieldName: fieldName, GeneratorName: handlerName})
 		} else if arg == "--resolve_refs" {
 			resolveReferences = true
 		} else if arg[0] == '-' {
@@ -203,7 +204,7 @@ Options:
 		fmt.Printf("Error: %+v\n", err)
 		os.Exit(-1)
 	}
-	document, err := openapi_v2.NewDocument(info, compiler.NewContextWithPatternFieldProtoGenerators("$root", nil, &patternFieldProtoGenerator))
+	document, err := openapi_v2.NewDocument(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, &customAnyProtoGenerator))
 	if err != nil {
 		writeFile(errorPath, []byte(err.Error()), sourceName, "errors")
 		os.Exit(-1)

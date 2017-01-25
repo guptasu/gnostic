@@ -72,7 +72,7 @@ const additionalCompilerCodeWithMain = "" +
 	"			os.Exit(0)\n" +
 	"		}\n" +
 	"      \n" +
-	"		newObject, err := New%sDocument(info, compiler.NewContextWithPatternFieldProtoGenerators(\"$root\", nil, nil))\n" +
+	"		newObject, err := New%sDocument(info, compiler.NewContextWithCustomAnyProtoGenerators(\"$root\", nil, nil))\n" +
 	"		if err != nil {\n" +
 	"			response.Error = append(response.Error, err.Error())\n" +
 	"			responseBytes, _ := proto.Marshal(response)\n" +
