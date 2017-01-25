@@ -101,7 +101,7 @@ func (domain *Domain) generateConstructorForType(code *printer.Code, typeName st
 	} else if typeModel.IsBlob {
 		code.Print("x := &Any{}")
 		code.Print("bytes, _ := yaml.Marshal(in)")
-		code.Print("x.Yaml = &any.Any{TypeUrl: string(bytes)}")
+		code.Print("x.Value = &any.Any{TypeUrl: string(bytes)}")
 	} else if typeModel.Name == "StringArray" {
 		code.Print("x := &StringArray{}")
 		code.Print("a, ok := in.([]interface{})")
@@ -354,7 +354,7 @@ func (domain *Domain) generateConstructorForType(code *printer.Code, typeName st
 						code.Print("    if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {")
 						code.Print("      result := &Any{}")
 						code.Print("      // ADD error handling here")
-						code.Print("      result.Yaml, err = patternFieldProtoGenerator.Perform(v)")
+						code.Print("      result.Value, err = patternFieldProtoGenerator.Perform(v)")
 						code.Print("      if err != nil {")
 						code.Print("          errors = append(errors, err)")
 						code.Print("      }")

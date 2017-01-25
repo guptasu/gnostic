@@ -42,7 +42,7 @@ option java_package = "org.openapi.extension.mytest";
 option objc_class_prefix = "mytest";
 
 message Any {
-  google.protobuf.Any yaml = 1;
+  google.protobuf.Any value = 1;
 }
 
 message MyTestDocument {

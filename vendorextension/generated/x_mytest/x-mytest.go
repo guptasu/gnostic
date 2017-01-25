@@ -37,7 +37,7 @@ func NewAny(in interface{}, context *compiler.Context) (*Any, error) {
 	errors := make([]error, 0)
 	x := &Any{}
 	bytes, _ := yaml.Marshal(in)
-	x.Yaml = &any.Any{TypeUrl: string(bytes)}
+	x.Value = &any.Any{TypeUrl: string(bytes)}
 	return x, compiler.NewErrorGroupOrNil(errors)
 }
 

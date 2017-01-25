@@ -545,7 +545,7 @@ func (domain *Domain) Build() {
 	anyType.Open = true
 	anyType.IsBlob = true
 	valueProperty := NewTypeProperty()
-	valueProperty.Name = "yaml"
+	valueProperty.Name = "value"
 	valueProperty.Type = "google.protobuf.Any"
 	anyType.addProperty(valueProperty)
 	domain.TypeModels[anyType.Name] = anyType

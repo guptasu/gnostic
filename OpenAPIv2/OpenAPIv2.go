@@ -54,7 +54,7 @@ func NewAny(in interface{}, context *compiler.Context) (*Any, error) {
 	errors := make([]error, 0)
 	x := &Any{}
 	bytes, _ := yaml.Marshal(in)
-	x.Yaml = &any.Any{TypeUrl: string(bytes)}
+	x.Value = &any.Any{TypeUrl: string(bytes)}
 	return x, compiler.NewErrorGroupOrNil(errors)
 }
 
@@ -132,7 +132,7 @@ func NewApiKeySecurity(in interface{}, context *compiler.Context) (*ApiKeySecuri
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -211,7 +211,7 @@ func NewBasicAuthenticationSecurity(in interface{}, context *compiler.Context) (
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -317,7 +317,7 @@ func NewBodyParameter(in interface{}, context *compiler.Context) (*BodyParameter
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -399,7 +399,7 @@ func NewContact(in interface{}, context *compiler.Context) (*Contact, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -446,7 +446,7 @@ func NewDefault(in interface{}, context *compiler.Context) (*Default, error) {
 						if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 							result := &Any{}
 							// ADD error handling here
-							result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+							result.Value, err = patternFieldProtoGenerator.Perform(v)
 							if err != nil {
 								errors = append(errors, err)
 							}
@@ -690,7 +690,7 @@ func NewDocument(in interface{}, context *compiler.Context) (*Document, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -737,7 +737,7 @@ func NewExamples(in interface{}, context *compiler.Context) (*Examples, error) {
 						if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 							result := &Any{}
 							// ADD error handling here
-							result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+							result.Value, err = patternFieldProtoGenerator.Perform(v)
 							if err != nil {
 								errors = append(errors, err)
 							}
@@ -815,7 +815,7 @@ func NewExternalDocs(in interface{}, context *compiler.Context) (*ExternalDocs, 
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -959,7 +959,7 @@ func NewFileSchema(in interface{}, context *compiler.Context) (*FileSchema, erro
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1242,7 +1242,7 @@ func NewFormDataParameterSubSchema(in interface{}, context *compiler.Context) (*
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1495,7 +1495,7 @@ func NewHeader(in interface{}, context *compiler.Context) (*Header, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1769,7 +1769,7 @@ func NewHeaderParameterSubSchema(in interface{}, context *compiler.Context) (*He
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -1913,7 +1913,7 @@ func NewInfo(in interface{}, context *compiler.Context) (*Info, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2044,7 +2044,7 @@ func NewLicense(in interface{}, context *compiler.Context) (*License, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2579,7 +2579,7 @@ func NewOauth2AccessCodeSecurity(in interface{}, context *compiler.Context) (*Oa
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2685,7 +2685,7 @@ func NewOauth2ApplicationSecurity(in interface{}, context *compiler.Context) (*O
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2791,7 +2791,7 @@ func NewOauth2ImplicitSecurity(in interface{}, context *compiler.Context) (*Oaut
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -2897,7 +2897,7 @@ func NewOauth2PasswordSecurity(in interface{}, context *compiler.Context) (*Oaut
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3113,7 +3113,7 @@ func NewOperation(in interface{}, context *compiler.Context) (*Operation, error)
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3341,7 +3341,7 @@ func NewPathItem(in interface{}, context *compiler.Context) (*PathItem, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3621,7 +3621,7 @@ func NewPathParameterSubSchema(in interface{}, context *compiler.Context) (*Path
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3676,7 +3676,7 @@ func NewPaths(in interface{}, context *compiler.Context) (*Paths, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -3933,7 +3933,7 @@ func NewPrimitivesItems(in interface{}, context *compiler.Context) (*PrimitivesI
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4245,7 +4245,7 @@ func NewQueryParameterSubSchema(in interface{}, context *compiler.Context) (*Que
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4342,7 +4342,7 @@ func NewResponse(in interface{}, context *compiler.Context) (*Response, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4473,7 +4473,7 @@ func NewResponses(in interface{}, context *compiler.Context) (*Responses, error)
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -4841,7 +4841,7 @@ func NewSchema(in interface{}, context *compiler.Context) (*Schema, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -5103,7 +5103,7 @@ func NewTag(in interface{}, context *compiler.Context) (*Tag, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
@@ -5164,7 +5164,7 @@ func NewVendorExtension(in interface{}, context *compiler.Context) (*VendorExten
 						if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 							result := &Any{}
 							// ADD error handling here
-							result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+							result.Value, err = patternFieldProtoGenerator.Perform(v)
 							if err != nil {
 								errors = append(errors, err)
 							}
@@ -5263,7 +5263,7 @@ func NewXml(in interface{}, context *compiler.Context) (*Xml, error) {
 							if strings.Compare(patternFieldProtoGenerator.PatternFieldName, k) == 0 {
 								result := &Any{}
 								// ADD error handling here
-								result.Yaml, err = patternFieldProtoGenerator.Perform(v)
+								result.Value, err = patternFieldProtoGenerator.Perform(v)
 								if err != nil {
 									errors = append(errors, err)
 								}
