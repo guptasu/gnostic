@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main
+package util
 
 import (
 	"fmt"
@@ -466,7 +466,7 @@ func (domain *Domain) buildTypeForDefinitionObject(
 	return typeModel
 }
 
-func (domain *Domain) build() {
+func (domain *Domain) Build() {
 	// create a type for the top-level schema
 	typeName := domain.Prefix + "Document"
 	typeModel := NewTypeModel()
@@ -480,16 +480,17 @@ func (domain *Domain) build() {
 	domain.TypeModels[typeName] = typeModel
 
 	// create a type for each object defined in the schema
-	for _, pair := range *(domain.Schema.Definitions) {
-		definitionName := pair.Name
-		definitionSchema := pair.Value
-		typeName := domain.typeNameForStub(definitionName)
-		typeModel := domain.buildTypeForDefinition(typeName, definitionName, definitionSchema)
-		if typeModel != nil {
-			domain.TypeModels[typeName] = typeModel
+	if domain.Schema.Definitions != nil {
+		for _, pair := range *(domain.Schema.Definitions) {
+			definitionName := pair.Name
+			definitionSchema := pair.Value
+			typeName := domain.typeNameForStub(definitionName)
+			typeModel := domain.buildTypeForDefinition(typeName, definitionName, definitionSchema)
+			if typeModel != nil {
+				domain.TypeModels[typeName] = typeModel
+			}
 		}
 	}
-
 	// iterate over anonymous object types to be instantiated and generate a type for each
 	for typeName, typeRequest := range domain.ObjectTypeRequests {
 		domain.TypeModels[typeRequest.Name] =
@@ -545,7 +546,7 @@ func (domain *Domain) build() {
 	anyType.IsBlob = true
 	valueProperty := NewTypeProperty()
 	valueProperty.Name = "yaml"
-	valueProperty.Type = "blob"
+	valueProperty.Type = "google.protobuf.Any"
 	anyType.addProperty(valueProperty)
 	domain.TypeModels[anyType.Name] = anyType
 }
@@ -559,7 +560,7 @@ func (domain *Domain) sortedTypeNames() []string {
 	return typeNames
 }
 
-func (domain *Domain) description() string {
+func (domain *Domain) Description() string {
 	typeNames := domain.sortedTypeNames()
 	result := ""
 	for _, typeName := range typeNames {

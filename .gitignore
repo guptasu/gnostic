@@ -2,4 +2,5 @@
 .checkstyle
 .project
 .settings
+.vscode
 

@@ -135,9 +135,13 @@ Options:
 	errorPath := ""
 	pluginCalls := make([]*PluginCall, 0)
 	resolveReferences := false
+	patternFieldProtoGenerator := make([]compiler.PatternFieldProtoGenerator, 0)
 
 	// arg processing matches patterns of the form "--PLUGIN_out=PATH"
 	plugin_regex, err := regexp.Compile("--(.+)_out=(.+)")
+
+	// arg processing matches patterns of the form "--custom_any_type=FIELNAME:INSTALLED_TOOL_TO_GENERATE_ANY_TYPE_FOR_FIELNAME"
+	patternFieldProtoGenerator_regex, err := regexp.Compile("--custom_any_type=(.+):(.+)")
 
 	for i, arg := range os.Args {
 		if i == 0 {
@@ -160,6 +164,10 @@ Options:
 				pluginCall := &PluginCall{Name: pluginName, Output: outputName}
 				pluginCalls = append(pluginCalls, pluginCall)
 			}
+		} else if m = patternFieldProtoGenerator_regex.FindSubmatch([]byte(arg)); m != nil {
+			fieldName := string(m[1])
+			handlerName := string(m[2])
+			patternFieldProtoGenerator = append(patternFieldProtoGenerator, compiler.PatternFieldProtoGenerator{PatternFieldName: fieldName, ProtoGeneratorName: handlerName})
 		} else if arg == "--resolve_refs" {
 			resolveReferences = true
 		} else if arg[0] == '-' {
@@ -195,7 +203,7 @@ Options:
 		fmt.Printf("Error: %+v\n", err)
 		os.Exit(-1)
 	}
-	document, err := openapi_v2.NewDocument(info, compiler.NewContext("$root", nil))
+	document, err := openapi_v2.NewDocument(info, compiler.NewContextWithPatternFieldProtoGenerators("$root", nil, &patternFieldProtoGenerator))
 	if err != nil {
 		writeFile(errorPath, []byte(err.Error()), sourceName, "errors")
 		os.Exit(-1)
