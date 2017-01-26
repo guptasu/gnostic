@@ -297,7 +297,7 @@ Usage: TODO
 		"github.com/googleapis/openapi-compiler/compiler",
 		outDirRelativeToGoPathSrc + "/" + "proto",
 	}
-	main := GenerateMainFile(goPackageName, LICENSE, mainExtPluginCode, imports)
+	main := GenerateMainFile("main", LICENSE, mainExtPluginCode, imports)
 	mainFileName := path.Join(outDir, "main.go")
 	err = ioutil.WriteFile(mainFileName, []byte(main), 0644)
 	if err != nil {
