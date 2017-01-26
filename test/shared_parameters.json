@@ -6,7 +6,7 @@
       "version": "v1"
     },
     "host": "library-example.googleapis.com",
-    "x-mytest" : {"code": 123, "message": 999},
+    "x-book" : {"code": 123, "message": 999},
     "parameters" : {
       "paramAtSwaggerScope": {
         "name": "paramAtSwaggerScope",

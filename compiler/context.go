@@ -52,6 +52,7 @@ func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) 
 		request.Wrapper.Version = "v2"
 
 		request.Wrapper.Yaml = string(binary)
+		request.Wrapper.ExtensionName = customAnyProtoGenerator.FieldName
 		requestBytes, _ := proto.Marshal(request)
 
 		cmd := exec.Command(customAnyProtoGenerator.GeneratorName)
