@@ -23,7 +23,7 @@
                         "bar"
                     ],
                     "properties": {
-                        "foo": {
+                        "foo1": {
                             "type": "integer",
                             "format": "int32"
                         },

@@ -23,7 +23,7 @@
 syntax = "proto3";
 
 import "google/protobuf/any.proto";
-package vendorextension;
+package openapiextension.plugin.v1;
 
 // This option lets the proto compiler generate Java code inside the package
 // name (see below) instead of inside an outer class. It creates a simpler
@@ -34,7 +34,7 @@ option java_multiple_files = true;
 // The Java outer classname should be the filename in UpperCamelCase. This
 // class is only used to hold proto descriptor, so developers don't need to
 // work with it directly.
-option java_outer_classname = "OpenAPIVendorExtensionPlugin";
+option java_outer_classname = "OpenAPIExtensionPluginV1";
 
 // The Java package name must be proto package name with proper prefix.
 option java_package = "org.openapic.v1";
@@ -45,7 +45,7 @@ option java_package = "org.openapic.v1";
 // hopefully unique enough to not conflict with things that may come along in
 // the future. 'GPB' is reserved for the protocol buffer implementation itself.
 //
-option objc_class_prefix = "OAC"; // "OpenAPI Compiler"
+option objc_class_prefix = "OAEP"; // "OpenAPI Compiler"
 
 // The version number of OpenAPI compiler.
 message Version {

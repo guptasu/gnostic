@@ -25,7 +25,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/any"
-	"github.com/googleapis/openapi-compiler/vendorextension"
+	ext_plugin "github.com/googleapis/openapi-compiler/openapivendorext/plugin"
 	yaml "gopkg.in/yaml.v2"
 )
 
@@ -38,16 +38,16 @@ func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) 
 	if customAnyProtoGenerator.GeneratorName != "" {
 		binary, _ := yaml.Marshal(in)
 
-		request := &vendorextension.VendorExtensionHandlerRequest{}
+		request := &ext_plugin.VendorExtensionHandlerRequest{}
 		request.Parameter = ""
 
-		version := &vendorextension.Version{}
+		version := &ext_plugin.Version{}
 		version.Major = 0
 		version.Minor = 1
 		version.Patch = 0
 		request.CompilerVersion = version
 
-		request.Wrapper = &vendorextension.Wrapper{}
+		request.Wrapper = &ext_plugin.Wrapper{}
 		request.Wrapper.Name = "TESTETEST"
 		request.Wrapper.Version = "v2"
 
@@ -62,7 +62,7 @@ func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) 
 			fmt.Printf("Error: %+v\n", err)
 			return nil, err
 		}
-		response := &vendorextension.VendorExtensionHandlerResponse{}
+		response := &ext_plugin.VendorExtensionHandlerResponse{}
 		err = proto.Unmarshal(output, response)
 		if err != nil {
 			fmt.Printf("Error: %+v\n", err)

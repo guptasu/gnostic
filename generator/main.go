@@ -113,7 +113,7 @@ func main() {
 	}
 
 	// generate the compiler
-	compiler := cc.GenerateCompiler(go_packagename, LICENSE, "", []string{})
+	compiler := cc.GenerateCompiler(go_packagename, LICENSE)
 	go_filename := filename + "/" + filename + ".go"
 	err = ioutil.WriteFile(go_filename, []byte(compiler), 0644)
 	if err != nil {
