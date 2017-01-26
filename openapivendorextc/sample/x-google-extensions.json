@@ -1,0 +1,36 @@
+        {
+            "definitions": {
+                "Book": {
+                    "type": "object",
+                    "required": [
+                        "code",
+                        "message"
+                    ],
+                    "properties": {
+                        "code": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "message": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "Shelve": {
+                    "type": "object",
+                    "required": [
+                        "foo",
+                        "bar"
+                    ],
+                    "properties": {
+                        "foo": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "bar": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }

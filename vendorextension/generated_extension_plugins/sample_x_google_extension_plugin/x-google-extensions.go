@@ -18,16 +18,15 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
-	"os"
-	"strings"
-
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/any"
 	"github.com/googleapis/openapi-compiler/compiler"
 	"github.com/googleapis/openapi-compiler/vendorextension"
 	"gopkg.in/yaml.v2"
+	"io/ioutil"
+	"os"
+	"strings"
 )
 
 func Version() string {
@@ -196,7 +195,7 @@ func (m *StringArray) ResolveReferences(root string) (interface{}, error) {
 	return nil, compiler.NewErrorGroupOrNil(errors)
 }
 
-type documentHandler func(name string, version string, document string)
+type documentHandler func(name string, version string, extensionName string, document string)
 
 func forInputYamlFromOpenapic(handler documentHandler) {
 	data, err := ioutil.ReadAll(os.Stdin)
@@ -215,7 +214,9 @@ func main() {
 	forInputYamlFromOpenapic(
 		func(name string, version string, extensionName string, yamlInput string) {
 			var info yaml.MapSlice
-			err := yaml.Unmarshal([]byte(yamlInput), &info)
+			var newObject proto.Message
+			var err error
+			err = yaml.Unmarshal([]byte(yamlInput), &info)
 			if err != nil {
 				response.Error = append(response.Error, err.Error())
 				responseBytes, _ := proto.Marshal(response)
@@ -223,7 +224,21 @@ func main() {
 				os.Exit(0)
 			}
 
-			newObject, err := NewBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+			switch extensionName {
+			// All supported extensions
+
+			case "x-book":
+				newObject, err = NewBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+
+			case "x-shelve":
+				newObject, err = NewShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+
+			default:
+				responseBytes, _ := proto.Marshal(response)
+				os.Stdout.Write(responseBytes)
+				os.Exit(0)
+			} // If we reach hear, then the extension is handled
+			response.Handled = true
 			if err != nil {
 				response.Error = append(response.Error, err.Error())
 				responseBytes, _ := proto.Marshal(response)

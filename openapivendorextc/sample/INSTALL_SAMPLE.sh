@@ -30,12 +30,12 @@ go install
 
 # run the tool to create your own vendor extension proto and compiler
 pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorextc
-openapivendorextc sample/x-mytest.json --out_dir=$GOPATH/src/github.com/googleapis/openapi-compiler/vendorextension/generated/x_mytest --extension_name=x-mytest --proto_message_name_prefix=MyTest
+openapivendorextc sample/x-google-extensions.json --out_dir=$GOPATH/src/github.com/googleapis/openapi-compiler/vendorextension/generated_extension_plugins/sample_x_google_extension_plugin --extension_name_to_message=x-book:Book --extension_name_to_message=x-shelve:Shelve --proto_option_suffix=GoogleExtensions
 
 # build and install your own vendor extension proto and compiler.
 # This will allow openapic to discover your vendor extension handler
 # and use it to create richer OpenAPI protobufs.
-cd $GOPATH/src/github.com/googleapis/openapi-compiler/vendorextension/generated/x_mytest
+cd $GOPATH/src/github.com/googleapis/openapi-compiler/vendorextension/generated_extension_plugins/sample_x_google_extension_plugin
 protoc --go_out=Mgoogle/protobuf/any.proto=github.com/golang/protobuf/ptypes/any:. *.proto
 go install
 

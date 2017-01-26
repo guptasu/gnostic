@@ -46,7 +46,7 @@ const LICENSE = "" +
 	"// limitations under the License.\n"
 
 const additionalCompilerCodeWithMain = "" +
-	"type documentHandler func(name string, version string, document string)\n" +
+	"type documentHandler func(name string, version string, extensionName string, document string)\n" +
 	"func forInputYamlFromOpenapic(handler documentHandler) {\n" +
 	"	data, err := ioutil.ReadAll(os.Stdin)\n" +
 	"\n" +
@@ -56,15 +56,17 @@ const additionalCompilerCodeWithMain = "" +
 	"	}\n" +
 	"	request := &vendorextension.VendorExtensionHandlerRequest{}\n" +
 	"	err = proto.Unmarshal(data, request)\n" +
-	"	handler(request.Wrapper.Name, request.Wrapper.Version, request.Wrapper.Yaml)\n" +
+	"	handler(request.Wrapper.Name, request.Wrapper.Version, request.Wrapper.ExtensionName, request.Wrapper.Yaml)\n" +
 	"}\n" +
 	"\n" +
 	"func main() {\n" +
 	"	response := &vendorextension.VendorExtensionHandlerResponse{}\n" +
 	"	forInputYamlFromOpenapic(\n" +
-	"		func(name string, version string, yamlInput string) {\n" +
+	"		func(name string, version string, extensionName string, yamlInput string) {\n" +
 	"		var info yaml.MapSlice\n" +
-	"		err := yaml.Unmarshal([]byte(yamlInput), &info)\n" +
+	"		var newObject proto.Message\n" +
+	"       var err error\n" +
+	"		err = yaml.Unmarshal([]byte(yamlInput), &info)\n" +
 	"		if err != nil {\n" +
 	"			response.Error = append(response.Error, err.Error())\n" +
 	"			responseBytes, _ := proto.Marshal(response)\n" +
@@ -72,7 +74,17 @@ const additionalCompilerCodeWithMain = "" +
 	"			os.Exit(0)\n" +
 	"		}\n" +
 	"      \n" +
-	"		newObject, err := New%sDocument(info, compiler.NewContextWithCustomAnyProtoGenerators(\"$root\", nil, nil))\n" +
+	"\n" +
+	"      switch extensionName {\n" +
+	"      // All supported extensions\n" +
+	"      %s\n" +
+	"      default:\n" +
+	"          responseBytes, _ := proto.Marshal(response)\n" +
+	"          os.Stdout.Write(responseBytes)\n" +
+	"          os.Exit(0)\n" +
+	"       }" +
+	"		// If we reach hear, then the extension is handled\n" +
+	"		response.Handled = true\n" +
 	"		if err != nil {\n" +
 	"			response.Error = append(response.Error, err.Error())\n" +
 	"			responseBytes, _ := proto.Marshal(response)\n" +
@@ -91,6 +103,10 @@ const additionalCompilerCodeWithMain = "" +
 	"	responseBytes, _ := proto.Marshal(response)\n" +
 	"	os.Stdout.Write(responseBytes)\n" +
 	"}\n"
+
+const caseString = "\n" +
+	"case \"%s\":\n" +
+	"newObject, err = New%s(info, compiler.NewContextWithCustomAnyProtoGenerators(\"$root\", nil, nil))\n"
 
 var PROTO_OPTIONS = []util.ProtoOption{
 	util.ProtoOption{
@@ -117,11 +133,13 @@ func main() {
 	usage := `
 Usage: TODO
 `
-	extensionName := ""
 	outDir := ""
 	schameFile := ""
-	protoMessageNamePrefix := ""
+	protoOptionSuffix := ""
 	plugin_regex, _ := regexp.Compile("--(.+)=(.+)")
+	plugin_extension_to_message_regex, _ := regexp.Compile("(.+):(.+)")
+
+	extensionToMessage := make(map[string]string)
 
 	for i, arg := range os.Args {
 		if i == 0 {
@@ -134,37 +152,51 @@ Usage: TODO
 			switch flagName {
 			case "out_dir":
 				outDir = flagValue
-			case "extension_name":
-				extensionName = flagValue
-			case "proto_message_name_prefix":
-				protoMessageNamePrefix = flagValue
+			case "proto_option_suffix":
+				protoOptionSuffix = flagValue
+			case "extension_name_to_message":
+				var t [][]byte
+				if t = plugin_extension_to_message_regex.FindSubmatch([]byte(flagValue)); t != nil {
+					extensionToMessage[string(t[1])] = string(t[2])
+				} else {
+					fmt.Printf("Unknown option: %s.\n%s\n", arg, usage)
+					os.Exit(-1)
+				}
 			default:
 				fmt.Printf("Unknown option: %s.\n%s\n", arg, usage)
 				os.Exit(-1)
 			}
+		} else if arg[0] == '-' {
+			fmt.Printf("Unknown option: %s.\n%s\n", arg, usage)
+			os.Exit(-1)
 		} else {
 			schameFile = arg
 		}
+	}
+
+	if len(extensionToMessage) == 0 {
+		fmt.Printf("No extension_name_to_message specified.\n%s\n", usage)
+		os.Exit(-1)
 	}
 
 	if schameFile == "" {
 		fmt.Printf("No input json schema specified.\n%s\n", usage)
 		os.Exit(-1)
 	}
+	if protoOptionSuffix == "" {
+		fmt.Printf("No proto_option_suffix specified.\n%s\n", usage)
+		os.Exit(-1)
+	}
 	if outDir == "" {
 		fmt.Printf("Missing output directive.\n%s\n", usage)
 		os.Exit(-1)
 	}
-	if extensionName == "" {
-		fmt.Printf("Extension name not specified.\n%s\n", usage)
-		os.Exit(-1)
-	}
-	if protoMessageNamePrefix == "" {
-		fmt.Printf("Proto Message Name Prefix not specified.\n%s\n", usage)
-		os.Exit(-1)
-	}
 
-	additionalCompilerCodeWithMainReplaced := fmt.Sprintf(additionalCompilerCodeWithMain, protoMessageNamePrefix)
+	var cases string
+	for extensionName, messagType := range extensionToMessage {
+		cases += fmt.Sprintf(caseString, extensionName, messagType)
+	}
+	additionalCompilerCodeWithMainReplaced := fmt.Sprintf(additionalCompilerCodeWithMain, cases)
 	outFileBaseName := filepath.Base(schameFile)
 	outFileBaseName = outFileBaseName[0 : len(outFileBaseName)-len(filepath.Ext(outFileBaseName))]
 
@@ -189,8 +221,6 @@ Usage: TODO
 
 	// build a simplified model of the types described by the schema
 	cc := util.NewDomain(openapi_schema)
-	cc.Prefix = protoMessageNamePrefix
-
 	cc.Build()
 
 	var err error
@@ -203,8 +233,8 @@ Usage: TODO
 	// generate the protocol buffer description
 
 	PROTO_OPTIONS = append(PROTO_OPTIONS,
-		util.ProtoOption{Name: "java_package", Value: "org.openapi.extension." + strings.ToLower(protoMessageNamePrefix), Comment: "// The Java package name must be proto package name with proper prefix."},
-		util.ProtoOption{Name: "objc_class_prefix", Value: strings.ToLower(protoMessageNamePrefix),
+		util.ProtoOption{Name: "java_package", Value: "org.openapi.extension." + strings.ToLower(protoOptionSuffix), Comment: "// The Java package name must be proto package name with proper prefix."},
+		util.ProtoOption{Name: "objc_class_prefix", Value: strings.ToLower(protoOptionSuffix),
 			Comment: "// A reasonable prefix for the Objective-C symbols generated from the package.\n" +
 				"// It should at a minimum be 3 characters long, all uppercase, and convention\n" +
 				"// is to use an abbreviation of the package name. Something short, but\n" +

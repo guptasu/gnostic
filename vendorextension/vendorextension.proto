@@ -74,6 +74,9 @@ message VendorExtensionHandlerRequest {
 // The plugin writes an encoded PluginResponse to stdout.
 message VendorExtensionHandlerResponse {
 
+  // true if the extension is handled by the extension plugin; false otherwise
+  bool handled = 1;
+  
   // Error message.  If non-empty, the plugin failed. 
   // The plugin process should exit with status code zero 
   // even if it reports an error in this way.
@@ -83,10 +86,10 @@ message VendorExtensionHandlerResponse {
   // itself -- such as the input Document being unparseable -- should be 
   // reported by writing a message to stderr and exiting with a non-zero 
   // status code.
-  repeated string error = 1;
+  repeated string error = 2;
   
   // text output
-  google.protobuf.Any value = 2;
+  google.protobuf.Any value = 3;
 }
 
 message Wrapper {
@@ -97,6 +100,9 @@ message Wrapper {
   // The version of the OpenAPI specification that is used by the wrapped description.
   string version = 2;
 
+  // Name of the extension
+  string extension_name = 3;
+
   // Must be a valid yaml for the proto
-  string yaml = 3;
+  string yaml = 4;
 }
