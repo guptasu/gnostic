@@ -36,7 +36,6 @@ func (domain *Domain) GenerateCompiler(packageName string, license string) strin
 		"gopkg.in/yaml.v2",
 		"strings",
 		"github.com/googleapis/openapi-compiler/compiler",
-		"github.com/golang/protobuf/ptypes/any",
 	}
 	code.Print("import (")
 	for _, filename := range imports {
@@ -98,7 +97,7 @@ func (domain *Domain) generateConstructorForType(code *printer.Code, typeName st
 	} else if typeModel.IsBlob {
 		code.Print("x := &Any{}")
 		code.Print("bytes, _ := yaml.Marshal(in)")
-		code.Print("x.Value = &any.Any{TypeUrl: string(bytes)}")
+		code.Print("x.Yaml = string(bytes)")
 	} else if typeModel.Name == "StringArray" {
 		code.Print("x := &StringArray{}")
 		code.Print("a, ok := in.([]interface{})")
@@ -348,16 +347,24 @@ func (domain *Domain) generateConstructorForType(code *printer.Code, typeName st
 						code.Print("handled := false")
 						code.Print("if context.CustomAnyProtoGenerators != nil && len(*(context.CustomAnyProtoGenerators)) != 0 {")
 						code.Print("  for _, customAnyProtoGenerator := range *(context.CustomAnyProtoGenerators) {")
-						code.Print("    if strings.Compare(customAnyProtoGenerator.FieldName, k) == 0 {")
 						code.Print("      result := &Any{}")
 						code.Print("      // ADD error handling here")
-						code.Print("      result.Value, err = customAnyProtoGenerator.Perform(v)")
-						code.Print("      if err != nil {")
-						code.Print("          errors = append(errors, err)")
+						code.Print("      outFromPlugin, errFromPlugin := customAnyProtoGenerator.Perform(v, k)")
+						code.Print("      if errFromPlugin != nil {")
+						code.Print("          errors = append(errors, errFromPlugin)")
+						code.Print("          handled = true")
+						code.Print("          break")
 						code.Print("      }")
-						code.Print("      handled = true")
-						code.Print("      pair.Value = result")
-						code.Print("    }")
+						code.Print("      if outFromPlugin == nil {")
+						code.Print("          continue")
+						code.Print("      } else {")
+						code.Print("        handled = true")
+						code.Print("        result.Value = outFromPlugin")
+						code.Print("        bytes, _ := yaml.Marshal(v)")
+						code.Print("        result.Yaml = string(bytes)")
+						code.Print("        pair.Value = result")
+						code.Print("        break")
+						code.Print("      }")
 						code.Print("  }")
 						code.Print("}")
 						code.Print("if !handled {")

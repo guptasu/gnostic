@@ -18,7 +18,6 @@ package googleextensions
 
 import (
 	"fmt"
-	"github.com/golang/protobuf/ptypes/any"
 	"github.com/googleapis/openapi-compiler/compiler"
 	"gopkg.in/yaml.v2"
 	"strings"
@@ -32,7 +31,7 @@ func NewAny(in interface{}, context *compiler.Context) (*Any, error) {
 	errors := make([]error, 0)
 	x := &Any{}
 	bytes, _ := yaml.Marshal(in)
-	x.Value = &any.Any{TypeUrl: string(bytes)}
+	x.Yaml = string(bytes)
 	return x, compiler.NewErrorGroupOrNil(errors)
 }
 
@@ -110,7 +109,7 @@ func NewShelve(in interface{}, context *compiler.Context) (*Shelve, error) {
 		message := fmt.Sprintf("has unexpected value: %+v", in)
 		errors = append(errors, compiler.NewError(context, message))
 	} else {
-		requiredKeys := []string{"bar", "foo"}
+		requiredKeys := []string{"bar", "foo1"}
 		missingKeys := compiler.MissingKeysInMap(m, requiredKeys)
 		if len(missingKeys) > 0 {
 			message := fmt.Sprintf("is missing required %s: %+v", compiler.PluralProperties(len(missingKeys)), strings.Join(missingKeys, ", "))

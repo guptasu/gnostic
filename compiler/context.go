@@ -30,11 +30,10 @@ import (
 )
 
 type CustomAnyProtoGenerator struct {
-	FieldName     string
 	GeneratorName string
 }
 
-func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) (*any.Any, error) {
+func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}, extensionName string) (*any.Any, error) {
 	if customAnyProtoGenerator.GeneratorName != "" {
 		binary, _ := yaml.Marshal(in)
 
@@ -52,7 +51,7 @@ func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) 
 		request.Wrapper.Version = "v2"
 
 		request.Wrapper.Yaml = string(binary)
-		request.Wrapper.ExtensionName = customAnyProtoGenerator.FieldName
+		request.Wrapper.ExtensionName = extensionName
 		requestBytes, _ := proto.Marshal(request)
 
 		cmd := exec.Command(customAnyProtoGenerator.GeneratorName)
@@ -69,8 +68,11 @@ func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) 
 			fmt.Printf("%s\n", string(output))
 			return nil, err
 		}
+		if !response.Handled {
+			return nil, nil
+		}
 		if len(response.Error) != 0 {
-			message := fmt.Sprintf("Errors when parsing: %+v for field %s by vendor extension handler %s. Details %+v", in, customAnyProtoGenerator.FieldName, customAnyProtoGenerator.GeneratorName, strings.Join(response.Error, ","))
+			message := fmt.Sprintf("Errors when parsing: %+v for field %s by vendor extension handler %s. Details %+v", in, extensionName, customAnyProtoGenerator.GeneratorName, strings.Join(response.Error, ","))
 			return nil, errors.New(message)
 		}
 		return response.Value, nil

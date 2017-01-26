@@ -50,6 +50,7 @@ message AdditionalPropertiesItem {
 
 message Any {
   google.protobuf.Any value = 1;
+  string yaml = 2;
 }
 
 message ApiKeySecurity {

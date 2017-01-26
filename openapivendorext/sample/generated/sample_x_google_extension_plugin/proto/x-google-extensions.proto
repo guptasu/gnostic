@@ -43,6 +43,7 @@ option objc_class_prefix = "googleextensions";
 
 message Any {
   google.protobuf.Any value = 1;
+  string yaml = 2;
 }
 
 message Book {

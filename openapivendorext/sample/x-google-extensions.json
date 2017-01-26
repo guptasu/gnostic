@@ -19,7 +19,7 @@
                 "Shelve": {
                     "type": "object",
                     "required": [
-                        "foo",
+                        "foo1",
                         "bar"
                     ],
                     "properties": {

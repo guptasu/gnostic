@@ -7,6 +7,8 @@
     },
     "host": "library-example.googleapis.com",
     "x-book" : {"code": 123, "message": 999},
+    "x-shelve" : {"foo1": 123, "bar": 999},
+    "x-unhandled" : {"code": 123, "message": 999},
     "parameters" : {
       "paramAtSwaggerScope": {
         "name": "paramAtSwaggerScope",

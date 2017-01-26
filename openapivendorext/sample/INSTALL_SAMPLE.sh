@@ -12,9 +12,10 @@ go install
 popd
 
 pushd $GOPATH/src/github.com/googleapis/openapi-compiler/generator 
-go build
-cd ..
-generator/generator
+./INSTALL.sh
+
+pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapic
+go install
 
 # ensure tool to generate the vendor extension compiler is installed.
 pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext/openapivendorextc

@@ -141,8 +141,8 @@ Options:
 	// arg processing matches patterns of the form "--PLUGIN_out=PATH"
 	plugin_regex, err := regexp.Compile("--(.+)_out=(.+)")
 
-	// arg processing matches patterns of the form "--custom_any_proto_gen=FIELNAME:INSTALLED_TOOL_TO_GENERATE_ANY_TYPE_FOR_FIELNAME"
-	customAnyProtoGenerator_regex, err := regexp.Compile("--custom_any_proto_gen=(.+):(.+)")
+	// arg processing matches patterns of the form "--custom_any_proto_gen=INSTALLED_TOOL_TO_GENERATE_ANY_TYPE_FOR_FIELNAME"
+	customAnyProtoGenerator_regex, err := regexp.Compile("--custom_any_proto_gen=(.+)")
 
 	for i, arg := range os.Args {
 		if i == 0 {
@@ -166,9 +166,7 @@ Options:
 				pluginCalls = append(pluginCalls, pluginCall)
 			}
 		} else if m = customAnyProtoGenerator_regex.FindSubmatch([]byte(arg)); m != nil {
-			fieldName := string(m[1])
-			handlerName := string(m[2])
-			customAnyProtoGenerator = append(customAnyProtoGenerator, compiler.CustomAnyProtoGenerator{FieldName: fieldName, GeneratorName: handlerName})
+			customAnyProtoGenerator = append(customAnyProtoGenerator, compiler.CustomAnyProtoGenerator{GeneratorName: string(m[1])})
 		} else if arg == "--resolve_refs" {
 			resolveReferences = true
 		} else if arg[0] == '-' {

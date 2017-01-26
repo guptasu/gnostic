@@ -548,6 +548,10 @@ func (domain *Domain) Build() {
 	valueProperty.Name = "value"
 	valueProperty.Type = "google.protobuf.Any"
 	anyType.addProperty(valueProperty)
+	yamlProperty := NewTypeProperty()
+	yamlProperty.Name = "yaml"
+	yamlProperty.Type = "string"
+	anyType.addProperty(yamlProperty)
 	domain.TypeModels[anyType.Name] = anyType
 }
 

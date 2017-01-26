@@ -64,11 +64,11 @@ func main() {
 			switch extensionName {
 			// All supported extensions
 
-			case "x-shelve":
-				newObject, err = googleextensions.NewShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
-
 			case "x-book":
 				newObject, err = googleextensions.NewBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+
+			case "x-shelve":
+				newObject, err = googleextensions.NewShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 
 			default:
 				responseBytes, _ := proto.Marshal(response)
