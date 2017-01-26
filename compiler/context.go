@@ -25,33 +25,33 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/any"
-	"github.com/googleapis/openapi-compiler/vendorextension"
+	ext_plugin "github.com/googleapis/openapi-compiler/openapivendorext/plugin"
 	yaml "gopkg.in/yaml.v2"
 )
 
 type CustomAnyProtoGenerator struct {
-	FieldName     string
 	GeneratorName string
 }
 
-func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) (*any.Any, error) {
+func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}, extensionName string) (*any.Any, error) {
 	if customAnyProtoGenerator.GeneratorName != "" {
 		binary, _ := yaml.Marshal(in)
 
-		request := &vendorextension.VendorExtensionHandlerRequest{}
+		request := &ext_plugin.VendorExtensionHandlerRequest{}
 		request.Parameter = ""
 
-		version := &vendorextension.Version{}
+		version := &ext_plugin.Version{}
 		version.Major = 0
 		version.Minor = 1
 		version.Patch = 0
 		request.CompilerVersion = version
 
-		request.Wrapper = &vendorextension.Wrapper{}
+		request.Wrapper = &ext_plugin.Wrapper{}
 		request.Wrapper.Name = "TESTETEST"
 		request.Wrapper.Version = "v2"
 
 		request.Wrapper.Yaml = string(binary)
+		request.Wrapper.ExtensionName = extensionName
 		requestBytes, _ := proto.Marshal(request)
 
 		cmd := exec.Command(customAnyProtoGenerator.GeneratorName)
@@ -61,15 +61,18 @@ func (customAnyProtoGenerator *CustomAnyProtoGenerator) Perform(in interface{}) 
 			fmt.Printf("Error: %+v\n", err)
 			return nil, err
 		}
-		response := &vendorextension.VendorExtensionHandlerResponse{}
+		response := &ext_plugin.VendorExtensionHandlerResponse{}
 		err = proto.Unmarshal(output, response)
 		if err != nil {
 			fmt.Printf("Error: %+v\n", err)
 			fmt.Printf("%s\n", string(output))
 			return nil, err
 		}
+		if !response.Handled {
+			return nil, nil
+		}
 		if len(response.Error) != 0 {
-			message := fmt.Sprintf("Errors when parsing: %+v for field %s by vendor extension handler %s. Details %+v", in, customAnyProtoGenerator.FieldName, customAnyProtoGenerator.GeneratorName, strings.Join(response.Error, ","))
+			message := fmt.Sprintf("Errors when parsing: %+v for field %s by vendor extension handler %s. Details %+v", in, extensionName, customAnyProtoGenerator.GeneratorName, strings.Join(response.Error, ","))
 			return nil, errors.New(message)
 		}
 		return response.Value, nil

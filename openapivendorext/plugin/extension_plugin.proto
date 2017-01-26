@@ -23,7 +23,7 @@
 syntax = "proto3";
 
 import "google/protobuf/any.proto";
-package vendorextension;
+package openapiextension.plugin.v1;
 
 // This option lets the proto compiler generate Java code inside the package
 // name (see below) instead of inside an outer class. It creates a simpler
@@ -34,7 +34,7 @@ option java_multiple_files = true;
 // The Java outer classname should be the filename in UpperCamelCase. This
 // class is only used to hold proto descriptor, so developers don't need to
 // work with it directly.
-option java_outer_classname = "OpenAPIVendorExtensionPlugin";
+option java_outer_classname = "OpenAPIExtensionPluginV1";
 
 // The Java package name must be proto package name with proper prefix.
 option java_package = "org.openapic.v1";
@@ -45,7 +45,7 @@ option java_package = "org.openapic.v1";
 // hopefully unique enough to not conflict with things that may come along in
 // the future. 'GPB' is reserved for the protocol buffer implementation itself.
 //
-option objc_class_prefix = "OAC"; // "OpenAPI Compiler"
+option objc_class_prefix = "OAEP"; // "OpenAPI Compiler"
 
 // The version number of OpenAPI compiler.
 message Version {
@@ -74,6 +74,9 @@ message VendorExtensionHandlerRequest {
 // The plugin writes an encoded PluginResponse to stdout.
 message VendorExtensionHandlerResponse {
 
+  // true if the extension is handled by the extension plugin; false otherwise
+  bool handled = 1;
+  
   // Error message.  If non-empty, the plugin failed. 
   // The plugin process should exit with status code zero 
   // even if it reports an error in this way.
@@ -83,10 +86,10 @@ message VendorExtensionHandlerResponse {
   // itself -- such as the input Document being unparseable -- should be 
   // reported by writing a message to stderr and exiting with a non-zero 
   // status code.
-  repeated string error = 1;
+  repeated string error = 2;
   
   // text output
-  google.protobuf.Any value = 2;
+  google.protobuf.Any value = 3;
 }
 
 message Wrapper {
@@ -97,6 +100,9 @@ message Wrapper {
   // The version of the OpenAPI specification that is used by the wrapped description.
   string version = 2;
 
+  // Name of the extension
+  string extension_name = 3;
+
   // Must be a valid yaml for the proto
-  string yaml = 3;
+  string yaml = 4;
 }

@@ -1,0 +1,36 @@
+        {
+            "definitions": {
+                "IbmBook": {
+                    "type": "object",
+                    "required": [
+                        "code",
+                        "message"
+                    ],
+                    "properties": {
+                        "code": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "message": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "IbmShelve": {
+                    "type": "object",
+                    "required": [
+                        "foo1",
+                        "bar"
+                    ],
+                    "properties": {
+                        "foo1": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "bar": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
