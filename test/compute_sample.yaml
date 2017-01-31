@@ -130,6 +130,9 @@ tags:
 paths:
   '/{project}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Project resource.
       operationId: compute.projects.get
       parameters:
@@ -162,6 +165,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/addresses':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of addresses.
       operationId: compute.addresses.aggregatedList
       parameters:
@@ -227,6 +233,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/autoscalers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of autoscalers.
       operationId: compute.autoscalers.aggregatedList
       parameters:
@@ -292,6 +301,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/backendServices':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Retrieves the list of all BackendService resources, regional and global, available to the specified project.'
       operationId: compute.backendServices.aggregatedList
       parameters:
@@ -357,6 +369,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/commitments':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of commitments.
       operationId: compute.commitments.aggregatedList
       parameters:
@@ -422,6 +437,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/diskTypes':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of disk types.
       operationId: compute.diskTypes.aggregatedList
       parameters:
@@ -487,6 +505,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/disks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of persistent disks.
       operationId: compute.disks.aggregatedList
       parameters:
@@ -552,6 +573,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/forwardingRules':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of forwarding rules.
       operationId: compute.forwardingRules.aggregatedList
       parameters:
@@ -617,6 +641,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/hosts':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of hosts.
       operationId: compute.hosts.aggregatedList
       parameters:
@@ -682,6 +709,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/instanceGroupManagers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of managed instance groups and groups them by zone.
       operationId: compute.instanceGroupManagers.aggregatedList
       parameters:
@@ -747,6 +777,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/instanceGroups':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of instance groups and sorts them by zone.
       operationId: compute.instanceGroups.aggregatedList
       parameters:
@@ -812,6 +845,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/instances':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves aggregated list of instances.
       operationId: compute.instances.aggregatedList
       parameters:
@@ -877,6 +913,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/machineTypes':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of machine types.
       operationId: compute.machineTypes.aggregatedList
       parameters:
@@ -942,6 +981,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/operations':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of all operations.
       operationId: compute.globalOperations.aggregatedList
       parameters:
@@ -1007,6 +1049,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/routers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of routers.
       operationId: compute.routers.aggregatedList
       parameters:
@@ -1072,6 +1117,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/subnetworks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of subnetworks.
       operationId: compute.subnetworks.aggregatedList
       parameters:
@@ -1137,6 +1185,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/targetInstances':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of target instances.
       operationId: compute.targetInstances.aggregatedList
       parameters:
@@ -1202,6 +1253,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/targetPools':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of target pools.
       operationId: compute.targetPools.aggregatedList
       parameters:
@@ -1267,6 +1321,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/targetVpnGateways':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of target VPN gateways.
       operationId: compute.targetVpnGateways.aggregatedList
       parameters:
@@ -1332,6 +1389,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/aggregated/vpnTunnels':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves an aggregated list of VPN tunnels.
       operationId: compute.vpnTunnels.aggregatedList
       parameters:
@@ -1405,6 +1465,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Disable this project as an XPN host project.
       operationId: compute.projects.disableXpnHost
       parameters:
@@ -1435,6 +1498,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Disable an XPN resource associated with this host project.
       operationId: compute.projects.disableXpnResource
       parameters:
@@ -1469,6 +1535,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Enable this project as an XPN host project.
       operationId: compute.projects.enableXpnHost
       parameters:
@@ -1499,6 +1568,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Enable XPN resource (a.k.a service project or service folder in the future) for a host project, so that subnetworks in the host project can be used by instances in the service project or folder.'
       operationId: compute.projects.enableXpnResource
       parameters:
@@ -1525,6 +1597,9 @@ paths:
         - projects
   '/{project}/getXpnHost':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Get the XPN host project that this project links to. May be empty if no link exists.
       operationId: compute.projects.getXpnHost
       parameters:
@@ -1557,6 +1632,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/getXpnResources':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Get XPN resources associated with this host project.
       operationId: compute.projects.getXpnResources
       parameters:
@@ -1589,6 +1667,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/addresses':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of global addresses.
       operationId: compute.globalAddresses.list
       parameters:
@@ -1653,6 +1734,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an address resource in the specified project using the data included in the request.
       operationId: compute.globalAddresses.insert
       parameters:
@@ -1679,6 +1763,9 @@ paths:
         - globalAddresses
   '/{project}/global/addresses/{address}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified address resource.
       operationId: compute.globalAddresses.delete
       parameters:
@@ -1705,6 +1792,9 @@ paths:
       tags:
         - globalAddresses
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified address resource. Get a list of available addresses by making a list() request.
       operationId: compute.globalAddresses.get
       parameters:
@@ -1750,6 +1840,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.globalAddresses.testIamPermissions
       parameters:
@@ -1783,6 +1876,9 @@ paths:
         - globalAddresses
   '/{project}/global/backendBuckets':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of BackendBucket resources available to the specified project.
       operationId: compute.backendBuckets.list
       parameters:
@@ -1847,6 +1943,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a BackendBucket resource in the specified project using the data included in the request.
       operationId: compute.backendBuckets.insert
       parameters:
@@ -1873,6 +1972,9 @@ paths:
         - backendBuckets
   '/{project}/global/backendBuckets/{backendBucket}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified BackendBucket resource.
       operationId: compute.backendBuckets.delete
       parameters:
@@ -1899,6 +2001,9 @@ paths:
       tags:
         - backendBuckets
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified BackendBucket resource. Get a list of available backend buckets by making a list() request.
       operationId: compute.backendBuckets.get
       parameters:
@@ -1935,6 +2040,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified BackendBucket resource with the data included in the request. This method supports patch semantics.
       operationId: compute.backendBuckets.patch
       parameters:
@@ -1965,6 +2073,9 @@ paths:
       tags:
         - backendBuckets
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified BackendBucket resource with the data included in the request.
       operationId: compute.backendBuckets.update
       parameters:
@@ -1996,6 +2107,9 @@ paths:
         - backendBuckets
   '/{project}/global/backendBuckets/{resource}/getIamPolicy':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the access control policy for a resource. May be empty if no such policy or resource exists.
       operationId: compute.backendBuckets.getIamPolicy
       parameters:
@@ -2041,6 +2155,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the access control policy on the specified resource. Replaces any existing policy.
       operationId: compute.backendBuckets.setIamPolicy
       parameters:
@@ -2082,6 +2199,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.backendBuckets.testIamPermissions
       parameters:
@@ -2115,6 +2235,9 @@ paths:
         - backendBuckets
   '/{project}/global/backendServices':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of BackendService resources available to the specified project.
       operationId: compute.backendServices.list
       parameters:
@@ -2179,6 +2302,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a BackendService resource in the specified project using the data included in the request. There are several restrictions and guidelines to keep in mind when creating a backend service. Read  Restrictions and Guidelines for more information.
       operationId: compute.backendServices.insert
       parameters:
@@ -2205,6 +2331,9 @@ paths:
         - backendServices
   '/{project}/global/backendServices/{backendService}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified BackendService resource.
       operationId: compute.backendServices.delete
       parameters:
@@ -2231,6 +2360,9 @@ paths:
       tags:
         - backendServices
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified BackendService resource. Get a list of available backend services by making a list() request.
       operationId: compute.backendServices.get
       parameters:
@@ -2267,6 +2399,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified BackendService resource with the data included in the request. There are several restrictions and guidelines to keep in mind when updating a backend service. Read  Restrictions and Guidelines for more information. This method supports patch semantics.
       operationId: compute.backendServices.patch
       parameters:
@@ -2297,6 +2432,9 @@ paths:
       tags:
         - backendServices
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified BackendService resource with the data included in the request. There are several restrictions and guidelines to keep in mind when updating a backend service. Read  Restrictions and Guidelines for more information.
       operationId: compute.backendServices.update
       parameters:
@@ -2336,6 +2474,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the most recent health check results for this BackendService.
       operationId: compute.backendServices.getHealth
       parameters:
@@ -2376,6 +2517,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.backendServices.testIamPermissions
       parameters:
@@ -2417,6 +2561,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.clientSslPolicies.testIamPermissions
       parameters:
@@ -2450,6 +2597,9 @@ paths:
         - clientSslPolicies
   '/{project}/global/firewalls':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of firewall rules available to the specified project.
       operationId: compute.firewalls.list
       parameters:
@@ -2514,6 +2664,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a firewall rule in the specified project using the data included in the request.
       operationId: compute.firewalls.insert
       parameters:
@@ -2540,6 +2693,9 @@ paths:
         - firewalls
   '/{project}/global/firewalls/{firewall}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified firewall.
       operationId: compute.firewalls.delete
       parameters:
@@ -2566,6 +2722,9 @@ paths:
       tags:
         - firewalls
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified firewall.
       operationId: compute.firewalls.get
       parameters:
@@ -2602,6 +2761,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified firewall rule with the data included in the request. This method supports patch semantics.
       operationId: compute.firewalls.patch
       parameters:
@@ -2632,6 +2794,9 @@ paths:
       tags:
         - firewalls
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified firewall rule with the data included in the request.
       operationId: compute.firewalls.update
       parameters:
@@ -2671,6 +2836,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.firewalls.testIamPermissions
       parameters:
@@ -2704,6 +2872,9 @@ paths:
         - firewalls
   '/{project}/global/forwardingRules':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of ForwardingRule resources available to the specified project.
       operationId: compute.globalForwardingRules.list
       parameters:
@@ -2768,6 +2939,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a ForwardingRule resource in the specified project and region using the data included in the request.
       operationId: compute.globalForwardingRules.insert
       parameters:
@@ -2794,6 +2968,9 @@ paths:
         - globalForwardingRules
   '/{project}/global/forwardingRules/{forwardingRule}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified ForwardingRule resource.
       operationId: compute.globalForwardingRules.delete
       parameters:
@@ -2820,6 +2997,9 @@ paths:
       tags:
         - globalForwardingRules
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified ForwardingRule resource. Get a list of available forwarding rules by making a list() request.
       operationId: compute.globalForwardingRules.get
       parameters:
@@ -2865,6 +3045,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes target URL for forwarding rule. The new target should be of the same type as the old target.
       operationId: compute.globalForwardingRules.setTarget
       parameters:
@@ -2904,6 +3087,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.globalForwardingRules.testIamPermissions
       parameters:
@@ -2937,6 +3123,9 @@ paths:
         - globalForwardingRules
   '/{project}/global/healthChecks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of HealthCheck resources available to the specified project.
       operationId: compute.healthChecks.list
       parameters:
@@ -3001,6 +3190,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a HealthCheck resource in the specified project using the data included in the request.
       operationId: compute.healthChecks.insert
       parameters:
@@ -3027,6 +3219,9 @@ paths:
         - healthChecks
   '/{project}/global/healthChecks/{healthCheck}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified HealthCheck resource.
       operationId: compute.healthChecks.delete
       parameters:
@@ -3053,6 +3248,9 @@ paths:
       tags:
         - healthChecks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified HealthCheck resource. Get a list of available health checks by making a list() request.
       operationId: compute.healthChecks.get
       parameters:
@@ -3089,6 +3287,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a HealthCheck resource in the specified project using the data included in the request. This method supports patch semantics.
       operationId: compute.healthChecks.patch
       parameters:
@@ -3119,6 +3320,9 @@ paths:
       tags:
         - healthChecks
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a HealthCheck resource in the specified project using the data included in the request.
       operationId: compute.healthChecks.update
       parameters:
@@ -3158,6 +3362,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.healthChecks.testIamPermissions
       parameters:
@@ -3191,6 +3398,9 @@ paths:
         - healthChecks
   '/{project}/global/httpHealthChecks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of HttpHealthCheck resources available to the specified project.
       operationId: compute.httpHealthChecks.list
       parameters:
@@ -3255,6 +3465,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a HttpHealthCheck resource in the specified project using the data included in the request.
       operationId: compute.httpHealthChecks.insert
       parameters:
@@ -3281,6 +3494,9 @@ paths:
         - httpHealthChecks
   '/{project}/global/httpHealthChecks/{httpHealthCheck}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified HttpHealthCheck resource.
       operationId: compute.httpHealthChecks.delete
       parameters:
@@ -3307,6 +3523,9 @@ paths:
       tags:
         - httpHealthChecks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified HttpHealthCheck resource. Get a list of available HTTP health checks by making a list() request.
       operationId: compute.httpHealthChecks.get
       parameters:
@@ -3343,6 +3562,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a HttpHealthCheck resource in the specified project using the data included in the request. This method supports patch semantics.
       operationId: compute.httpHealthChecks.patch
       parameters:
@@ -3373,6 +3595,9 @@ paths:
       tags:
         - httpHealthChecks
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a HttpHealthCheck resource in the specified project using the data included in the request.
       operationId: compute.httpHealthChecks.update
       parameters:
@@ -3412,6 +3637,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.httpHealthChecks.testIamPermissions
       parameters:
@@ -3445,6 +3673,9 @@ paths:
         - httpHealthChecks
   '/{project}/global/httpsHealthChecks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of HttpsHealthCheck resources available to the specified project.
       operationId: compute.httpsHealthChecks.list
       parameters:
@@ -3509,6 +3740,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a HttpsHealthCheck resource in the specified project using the data included in the request.
       operationId: compute.httpsHealthChecks.insert
       parameters:
@@ -3535,6 +3769,9 @@ paths:
         - httpsHealthChecks
   '/{project}/global/httpsHealthChecks/{httpsHealthCheck}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified HttpsHealthCheck resource.
       operationId: compute.httpsHealthChecks.delete
       parameters:
@@ -3561,6 +3798,9 @@ paths:
       tags:
         - httpsHealthChecks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified HttpsHealthCheck resource. Get a list of available HTTPS health checks by making a list() request.
       operationId: compute.httpsHealthChecks.get
       parameters:
@@ -3597,6 +3837,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a HttpsHealthCheck resource in the specified project using the data included in the request. This method supports patch semantics.
       operationId: compute.httpsHealthChecks.patch
       parameters:
@@ -3627,6 +3870,9 @@ paths:
       tags:
         - httpsHealthChecks
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a HttpsHealthCheck resource in the specified project using the data included in the request.
       operationId: compute.httpsHealthChecks.update
       parameters:
@@ -3666,6 +3912,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.httpsHealthChecks.testIamPermissions
       parameters:
@@ -3699,6 +3948,9 @@ paths:
         - httpsHealthChecks
   '/{project}/global/images':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Retrieves the list of private images available to the specified project. Private images are images you create that belong to your project. This method does not get any images that belong to other projects, including publicly-available images, like Debian 8. If you want to get a list of publicly-available images, use this method to make a request to the respective image project, such as debian-cloud or windows-cloud.'
       operationId: compute.images.list
       parameters:
@@ -3763,6 +4015,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an image in the specified project using the data included in the request.
       operationId: compute.images.insert
       parameters:
@@ -3795,6 +4050,9 @@ paths:
         - images
   '/{project}/global/images/family/{family}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the latest image that is part of an image family and is not deprecated.
       operationId: compute.images.getFromFamily
       parameters:
@@ -3832,6 +4090,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/images/{image}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified image.
       operationId: compute.images.delete
       parameters:
@@ -3858,6 +4119,9 @@ paths:
       tags:
         - images
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified image. Get a list of available images by making a list() request.
       operationId: compute.images.get
       parameters:
@@ -3903,6 +4167,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: |-
         Sets the deprecation status of an image.
 
@@ -3945,6 +4212,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Sets the labels on an image. To learn more about labels, read the Labeling or Tagging Resources documentation.'
       operationId: compute.images.setLabels
       parameters:
@@ -3984,6 +4254,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.images.testIamPermissions
       parameters:
@@ -4017,6 +4290,9 @@ paths:
         - images
   '/{project}/global/instanceTemplates':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of instance templates that are contained within the specified project and zone.
       operationId: compute.instanceTemplates.list
       parameters:
@@ -4081,6 +4357,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Creates an instance template in the specified project using the data that is included in the request. If you are creating a new template to update an existing instance group, your new instance template must use the same network or, if applicable, the same subnetwork as the original template.'
       operationId: compute.instanceTemplates.insert
       parameters:
@@ -4107,6 +4386,9 @@ paths:
         - instanceTemplates
   '/{project}/global/instanceTemplates/{instanceTemplate}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Deletes the specified instance template. If you delete an instance template that is being referenced from another instance group, the instance group will not be able to create or recreate virtual machine instances. Deleting an instance template is permanent and cannot be undone.'
       operationId: compute.instanceTemplates.delete
       parameters:
@@ -4133,6 +4415,9 @@ paths:
       tags:
         - instanceTemplates
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified instance template. Get a list of available instance templates by making a list() request.
       operationId: compute.instanceTemplates.get
       parameters:
@@ -4178,6 +4463,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.instanceTemplates.testIamPermissions
       parameters:
@@ -4211,6 +4499,9 @@ paths:
         - instanceTemplates
   '/{project}/global/licenses/{license}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified License resource. Get a list of available licenses by making a list() request.
       operationId: compute.licenses.get
       parameters:
@@ -4248,6 +4539,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/networks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of networks available to the specified project.
       operationId: compute.networks.list
       parameters:
@@ -4312,6 +4606,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a network in the specified project using the data included in the request.
       operationId: compute.networks.insert
       parameters:
@@ -4338,6 +4635,9 @@ paths:
         - networks
   '/{project}/global/networks/{network}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified network.
       operationId: compute.networks.delete
       parameters:
@@ -4364,6 +4664,9 @@ paths:
       tags:
         - networks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified network. Get a list of available networks by making a list() request.
       operationId: compute.networks.get
       parameters:
@@ -4409,6 +4712,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Adds a peering to the specified network.
       operationId: compute.networks.addPeering
       parameters:
@@ -4448,6 +4754,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Removes a peering from the specified network.
       operationId: compute.networks.removePeering
       parameters:
@@ -4487,6 +4796,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Switches the network mode from auto subnet mode to custom subnet mode.
       operationId: compute.networks.switchToCustomMode
       parameters:
@@ -4522,6 +4834,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.networks.testIamPermissions
       parameters:
@@ -4555,6 +4870,9 @@ paths:
         - networks
   '/{project}/global/operations':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of Operation resources contained within the specified project.
       operationId: compute.globalOperations.list
       parameters:
@@ -4620,6 +4938,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/operations/{operation}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified Operations resource.
       operationId: compute.globalOperations.delete
       parameters:
@@ -4644,6 +4965,9 @@ paths:
       tags:
         - globalOperations
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the specified Operations resource. Get a list of operations by making a list() request.
       operationId: compute.globalOperations.get
       parameters:
@@ -4681,6 +5005,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/routes':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of Route resources available to the specified project.
       operationId: compute.routes.list
       parameters:
@@ -4745,6 +5072,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a Route resource in the specified project using the data included in the request.
       operationId: compute.routes.insert
       parameters:
@@ -4779,6 +5109,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.routes.testIamPermissions
       parameters:
@@ -4812,6 +5145,9 @@ paths:
         - routes
   '/{project}/global/routes/{route}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified Route resource.
       operationId: compute.routes.delete
       parameters:
@@ -4838,6 +5174,9 @@ paths:
       tags:
         - routes
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Route resource. Get a list of available routes by making a list() request.
       operationId: compute.routes.get
       parameters:
@@ -4875,6 +5214,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/snapshots':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of Snapshot resources contained within the specified project.
       operationId: compute.snapshots.list
       parameters:
@@ -4948,6 +5290,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Sets the labels on a snapshot. To learn more about labels, read the Labeling or Tagging Resources documentation.'
       operationId: compute.snapshots.setLabels
       parameters:
@@ -4987,6 +5332,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.snapshots.testIamPermissions
       parameters:
@@ -5020,6 +5368,9 @@ paths:
         - snapshots
   '/{project}/global/snapshots/{snapshot}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: |-
         Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot.
 
@@ -5049,6 +5400,9 @@ paths:
       tags:
         - snapshots
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Snapshot resource. Get a list of available snapshots by making a list() request.
       operationId: compute.snapshots.get
       parameters:
@@ -5086,6 +5440,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/sslCertificates':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of SslCertificate resources available to the specified project.
       operationId: compute.sslCertificates.list
       parameters:
@@ -5150,6 +5507,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a SslCertificate resource in the specified project using the data included in the request.
       operationId: compute.sslCertificates.insert
       parameters:
@@ -5184,6 +5544,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.sslCertificates.testIamPermissions
       parameters:
@@ -5217,6 +5580,9 @@ paths:
         - sslCertificates
   '/{project}/global/sslCertificates/{sslCertificate}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified SslCertificate resource.
       operationId: compute.sslCertificates.delete
       parameters:
@@ -5243,6 +5609,9 @@ paths:
       tags:
         - sslCertificates
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified SslCertificate resource. Get a list of available SSL certificates by making a list() request.
       operationId: compute.sslCertificates.get
       parameters:
@@ -5280,6 +5649,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/targetHttpProxies':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of TargetHttpProxy resources available to the specified project.
       operationId: compute.targetHttpProxies.list
       parameters:
@@ -5344,6 +5716,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a TargetHttpProxy resource in the specified project using the data included in the request.
       operationId: compute.targetHttpProxies.insert
       parameters:
@@ -5378,6 +5753,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetHttpProxies.testIamPermissions
       parameters:
@@ -5411,6 +5789,9 @@ paths:
         - targetHttpProxies
   '/{project}/global/targetHttpProxies/{targetHttpProxy}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified TargetHttpProxy resource.
       operationId: compute.targetHttpProxies.delete
       parameters:
@@ -5437,6 +5818,9 @@ paths:
       tags:
         - targetHttpProxies
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified TargetHttpProxy resource. Get a list of available target HTTP proxies by making a list() request.
       operationId: compute.targetHttpProxies.get
       parameters:
@@ -5474,6 +5858,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/targetHttpsProxies':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of TargetHttpsProxy resources available to the specified project.
       operationId: compute.targetHttpsProxies.list
       parameters:
@@ -5538,6 +5925,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a TargetHttpsProxy resource in the specified project using the data included in the request.
       operationId: compute.targetHttpsProxies.insert
       parameters:
@@ -5572,6 +5962,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetHttpsProxies.testIamPermissions
       parameters:
@@ -5605,6 +5998,9 @@ paths:
         - targetHttpsProxies
   '/{project}/global/targetHttpsProxies/{targetHttpsProxy}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified TargetHttpsProxy resource.
       operationId: compute.targetHttpsProxies.delete
       parameters:
@@ -5631,6 +6027,9 @@ paths:
       tags:
         - targetHttpsProxies
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified TargetHttpsProxy resource. Get a list of available target HTTPS proxies by making a list() request.
       operationId: compute.targetHttpsProxies.get
       parameters:
@@ -5668,6 +6067,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/global/targetSslProxies':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of TargetSslProxy resources available to the specified project.
       operationId: compute.targetSslProxies.list
       parameters:
@@ -5732,6 +6134,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a TargetSslProxy resource in the specified project using the data included in the request.
       operationId: compute.targetSslProxies.insert
       parameters:
@@ -5766,6 +6171,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetSslProxies.testIamPermissions
       parameters:
@@ -5799,6 +6207,9 @@ paths:
         - targetSslProxies
   '/{project}/global/targetSslProxies/{targetSslProxy}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified TargetSslProxy resource.
       operationId: compute.targetSslProxies.delete
       parameters:
@@ -5825,6 +6236,9 @@ paths:
       tags:
         - targetSslProxies
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified TargetSslProxy resource. Get a list of available target SSL proxies by making a list() request.
       operationId: compute.targetSslProxies.get
       parameters:
@@ -5870,6 +6284,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the BackendService for TargetSslProxy.
       operationId: compute.targetSslProxies.setBackendService
       parameters:
@@ -5909,6 +6326,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the ProxyHeaderType for TargetSslProxy.
       operationId: compute.targetSslProxies.setProxyHeader
       parameters:
@@ -5948,6 +6368,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes SslCertificates for TargetSslProxy.
       operationId: compute.targetSslProxies.setSslCertificates
       parameters:
@@ -5979,6 +6402,9 @@ paths:
         - targetSslProxies
   '/{project}/global/targetTcpProxies':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of TargetTcpProxy resources available to the specified project.
       operationId: compute.targetTcpProxies.list
       parameters:
@@ -6043,6 +6469,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a TargetTcpProxy resource in the specified project using the data included in the request.
       operationId: compute.targetTcpProxies.insert
       parameters:
@@ -6077,6 +6506,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetTcpProxies.testIamPermissions
       parameters:
@@ -6110,6 +6542,9 @@ paths:
         - targetTcpProxies
   '/{project}/global/targetTcpProxies/{targetTcpProxy}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified TargetTcpProxy resource.
       operationId: compute.targetTcpProxies.delete
       parameters:
@@ -6136,6 +6571,9 @@ paths:
       tags:
         - targetTcpProxies
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified TargetTcpProxy resource. Get a list of available target TCP proxies by making a list() request.
       operationId: compute.targetTcpProxies.get
       parameters:
@@ -6181,6 +6619,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the BackendService for TargetTcpProxy.
       operationId: compute.targetTcpProxies.setBackendService
       parameters:
@@ -6220,6 +6661,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the ProxyHeaderType for TargetTcpProxy.
       operationId: compute.targetTcpProxies.setProxyHeader
       parameters:
@@ -6251,6 +6695,9 @@ paths:
         - targetTcpProxies
   '/{project}/global/urlMaps':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of UrlMap resources available to the specified project.
       operationId: compute.urlMaps.list
       parameters:
@@ -6315,6 +6762,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a UrlMap resource in the specified project using the data included in the request.
       operationId: compute.urlMaps.insert
       parameters:
@@ -6349,6 +6799,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.urlMaps.testIamPermissions
       parameters:
@@ -6382,6 +6835,9 @@ paths:
         - urlMaps
   '/{project}/global/urlMaps/{urlMap}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified UrlMap resource.
       operationId: compute.urlMaps.delete
       parameters:
@@ -6408,6 +6864,9 @@ paths:
       tags:
         - urlMaps
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified UrlMap resource. Get a list of available URL maps by making a list() request.
       operationId: compute.urlMaps.get
       parameters:
@@ -6444,6 +6903,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified UrlMap resource with the data included in the request. This method supports patch semantics.
       operationId: compute.urlMaps.patch
       parameters:
@@ -6474,6 +6936,9 @@ paths:
       tags:
         - urlMaps
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified UrlMap resource with the data included in the request.
       operationId: compute.urlMaps.update
       parameters:
@@ -6513,6 +6978,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Initiates a cache invalidation operation, invalidating the specified path, scoped to the specified UrlMap.'
       operationId: compute.urlMaps.invalidateCache
       parameters:
@@ -6552,6 +7020,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Runs static validation for the UrlMap. In particular, the tests of the provided UrlMap will be run. Calling this method does NOT create the UrlMap.'
       operationId: compute.urlMaps.validate
       parameters:
@@ -6591,6 +7062,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: List all XPN host projects visible to the user in an organization.
       operationId: compute.projects.listXpnHosts
       parameters:
@@ -6627,6 +7101,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Moves a persistent disk from one zone to another.
       operationId: compute.projects.moveDisk
       parameters:
@@ -6661,6 +7138,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Moves an instance and its attached persistent disks from one zone to another.
       operationId: compute.projects.moveInstance
       parameters:
@@ -6687,6 +7167,9 @@ paths:
         - projects
   '/{project}/regions':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of region resources available to the specified project.
       operationId: compute.regions.list
       parameters:
@@ -6752,6 +7235,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Region resource. Get a list of available regions by making a list() request.
       operationId: compute.regions.get
       parameters:
@@ -6789,6 +7275,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/addresses':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of addresses contained within the specified region.
       operationId: compute.addresses.list
       parameters:
@@ -6858,6 +7347,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an address resource in the specified project using the data included in the request.
       operationId: compute.addresses.insert
       parameters:
@@ -6889,6 +7381,9 @@ paths:
         - addresses
   '/{project}/regions/{region}/addresses/{address}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified address resource.
       operationId: compute.addresses.delete
       parameters:
@@ -6920,6 +7415,9 @@ paths:
       tags:
         - addresses
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified address resource.
       operationId: compute.addresses.get
       parameters:
@@ -6970,6 +7468,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.addresses.testIamPermissions
       parameters:
@@ -7008,6 +7509,9 @@ paths:
         - addresses
   '/{project}/regions/{region}/autoscalers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of autoscalers contained within the specified region.
       operationId: compute.regionAutoscalers.list
       parameters:
@@ -7077,6 +7581,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates an autoscaler in the specified project using the data included in the request. This method supports patch semantics.
       operationId: compute.regionAutoscalers.patch
       parameters:
@@ -7112,6 +7619,9 @@ paths:
       tags:
         - regionAutoscalers
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an autoscaler in the specified project using the data included in the request.
       operationId: compute.regionAutoscalers.insert
       parameters:
@@ -7142,6 +7652,9 @@ paths:
       tags:
         - regionAutoscalers
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates an autoscaler in the specified project using the data included in the request.
       operationId: compute.regionAutoscalers.update
       parameters:
@@ -7177,6 +7690,9 @@ paths:
         - regionAutoscalers
   '/{project}/regions/{region}/autoscalers/{autoscaler}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified autoscaler.
       operationId: compute.regionAutoscalers.delete
       parameters:
@@ -7208,6 +7724,9 @@ paths:
       tags:
         - regionAutoscalers
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified autoscaler.
       operationId: compute.regionAutoscalers.get
       parameters:
@@ -7258,6 +7777,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.regionAutoscalers.testIamPermissions
       parameters:
@@ -7296,6 +7818,9 @@ paths:
         - regionAutoscalers
   '/{project}/regions/{region}/backendServices':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of regional BackendService resources available to the specified project in the given region.
       operationId: compute.regionBackendServices.list
       parameters:
@@ -7365,6 +7890,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a regional BackendService resource in the specified project using the data included in the request. There are several restrictions and guidelines to keep in mind when creating a regional backend service. Read  Restrictions and Guidelines for more information.
       operationId: compute.regionBackendServices.insert
       parameters:
@@ -7396,6 +7924,9 @@ paths:
         - regionBackendServices
   '/{project}/regions/{region}/backendServices/{backendService}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified regional BackendService resource.
       operationId: compute.regionBackendServices.delete
       parameters:
@@ -7427,6 +7958,9 @@ paths:
       tags:
         - regionBackendServices
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified regional BackendService resource.
       operationId: compute.regionBackendServices.get
       parameters:
@@ -7468,6 +8002,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified regional BackendService resource with the data included in the request. There are several restrictions and guidelines to keep in mind when updating a backend service. Read  Restrictions and Guidelines for more information. This method supports patch semantics.
       operationId: compute.regionBackendServices.patch
       parameters:
@@ -7503,6 +8040,9 @@ paths:
       tags:
         - regionBackendServices
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified regional BackendService resource with the data included in the request. There are several restrictions and guidelines to keep in mind when updating a backend service. Read  Restrictions and Guidelines for more information.
       operationId: compute.regionBackendServices.update
       parameters:
@@ -7547,6 +8087,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the most recent health check results for this regional BackendService.
       operationId: compute.regionBackendServices.getHealth
       parameters:
@@ -7592,6 +8135,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.regionBackendServices.testIamPermissions
       parameters:
@@ -7630,6 +8176,9 @@ paths:
         - regionBackendServices
   '/{project}/regions/{region}/diskTypes':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of regional disk types available to the specified project.
       operationId: compute.regionDiskTypes.list
       parameters:
@@ -7700,6 +8249,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/diskTypes/{diskType}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified regional disk type. Get a list of available disk types by making a list() request.
       operationId: compute.regionDiskTypes.get
       parameters:
@@ -7742,6 +8294,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/disks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of persistent disks contained within the specified region.
       operationId: compute.regionDisks.list
       parameters:
@@ -7811,6 +8366,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a persistent regional disk in the specified project using the data included in the request.
       operationId: compute.regionDisks.insert
       parameters:
@@ -7846,6 +8404,9 @@ paths:
         - regionDisks
   '/{project}/regions/{region}/disks/{disk}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Deletes the specified regional persistent disk. Deleting a regional disk removes all the replicas of its data permanently and is irreversible. However, deleting a disk does not delete any snapshots previously made from the disk. You must separately delete snapshots.'
       operationId: compute.regionDisks.delete
       parameters:
@@ -7877,6 +8438,9 @@ paths:
       tags:
         - regionDisks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns a specified regional persistent disk.
       operationId: compute.regionDisks.get
       parameters:
@@ -7927,6 +8491,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a snapshot of this regional disk.
       operationId: compute.regionDisks.createSnapshot
       parameters:
@@ -7974,6 +8541,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Resizes the specified regional persistent disk.
       operationId: compute.regionDisks.resize
       parameters:
@@ -8018,6 +8588,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the labels on the target regional disk.
       operationId: compute.regionDisks.setLabels
       parameters:
@@ -8062,6 +8635,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.regionDisks.testIamPermissions
       parameters:
@@ -8100,6 +8676,9 @@ paths:
         - regionDisks
   '/{project}/regions/{region}/forwardingRules':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of ForwardingRule resources available to the specified project and region.
       operationId: compute.forwardingRules.list
       parameters:
@@ -8169,6 +8748,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a ForwardingRule resource in the specified project and region using the data included in the request.
       operationId: compute.forwardingRules.insert
       parameters:
@@ -8200,6 +8782,9 @@ paths:
         - forwardingRules
   '/{project}/regions/{region}/forwardingRules/{forwardingRule}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified ForwardingRule resource.
       operationId: compute.forwardingRules.delete
       parameters:
@@ -8231,6 +8816,9 @@ paths:
       tags:
         - forwardingRules
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified ForwardingRule resource.
       operationId: compute.forwardingRules.get
       parameters:
@@ -8281,6 +8869,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes target URL for forwarding rule. The new target should be of the same type as the old target.
       operationId: compute.forwardingRules.setTarget
       parameters:
@@ -8325,6 +8916,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.forwardingRules.testIamPermissions
       parameters:
@@ -8363,6 +8957,9 @@ paths:
         - forwardingRules
   '/{project}/regions/{region}/instanceGroupManagers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of managed instance groups that are contained within the specified region.
       operationId: compute.regionInstanceGroupManagers.list
       parameters:
@@ -8432,6 +9029,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Creates a managed instance group using the information that you specify in the request. After the group is created, it schedules an action to create instances in the group using the specified instance template. This operation is marked as DONE when the group is created even if the instances in the group have not yet been created. You must separately verify the status of the individual instances with the listmanagedinstances method.'
       operationId: compute.regionInstanceGroupManagers.insert
       parameters:
@@ -8463,6 +9063,9 @@ paths:
         - regionInstanceGroupManagers
   '/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified managed instance group and all of the instances in that group.
       operationId: compute.regionInstanceGroupManagers.delete
       parameters:
@@ -8494,6 +9097,9 @@ paths:
       tags:
         - regionInstanceGroupManagers
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns all of the details about the specified managed instance group.
       operationId: compute.regionInstanceGroupManagers.get
       parameters:
@@ -8535,6 +9141,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a managed instance group using the information that you specify in the request. This operation is marked as DONE when the group is updated even if the instances in the group have not yet been updated. You must separately verify the status of the individual instances with the listmanagedinstances method. This method supports patch semantics.
       operationId: compute.regionInstanceGroupManagers.patch
       parameters:
@@ -8570,6 +9179,9 @@ paths:
       tags:
         - regionInstanceGroupManagers
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a managed instance group using the information that you specify in the request. This operation is marked as DONE when the group is updated even if the instances in the group have not yet been updated. You must separately verify the status of the individual instances with the listmanagedinstances method.
       operationId: compute.regionInstanceGroupManagers.update
       parameters:
@@ -8614,6 +9226,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Schedules a group action to remove the specified instances from the managed instance group. Abandoning an instance does not delete the instance, but it does remove the instance from any target pools that are applied by the managed instance group. This method reduces the targetSize of the managed instance group by the number of instances that you abandon. This operation is marked as DONE when the action is scheduled even if the instances have not yet been removed from the group. You must separately verify the status of the abandoning action with the listmanagedinstances method.'
       operationId: compute.regionInstanceGroupManagers.abandonInstances
       parameters:
@@ -8658,6 +9273,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Schedules a group action to delete the specified instances in the managed instance group. The instances are also removed from any target pools of which they were a member. This method reduces the targetSize of the managed instance group by the number of instances that you delete. This operation is marked as DONE when the action is scheduled even if the instances are still being deleted. You must separately verify the status of the deleting action with the listmanagedinstances method.
       operationId: compute.regionInstanceGroupManagers.deleteInstances
       parameters:
@@ -8702,6 +9320,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Lists the instances in the managed instance group and instances that are scheduled to be created. The list includes any current actions that the group has scheduled for its instances.
       operationId: compute.regionInstanceGroupManagers.listManagedInstances
       parameters:
@@ -8759,6 +9380,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Schedules a group action to recreate the specified instances in the managed instance group. The instances are deleted and recreated using the current instance template for the managed instance group. This operation is marked as DONE when the action is scheduled even if the instances have not yet been recreated. You must separately verify the status of the recreating action with the listmanagedinstances method.
       operationId: compute.regionInstanceGroupManagers.recreateInstances
       parameters:
@@ -8803,6 +9427,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Changes the intended size for the managed instance group. If you increase the size, the group schedules actions to create new instances using the current instance template. If you decrease the size, the group schedules delete actions on one or more instances. The resize operation is marked DONE when the resize actions are scheduled even if the group has not yet added or deleted any instances. You must separately verify the status of the creating or deleting actions with the listmanagedinstances method.'
       operationId: compute.regionInstanceGroupManagers.resize
       parameters:
@@ -8849,6 +9476,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Modifies the autohealing policy for the instances in this managed instance group.
       operationId: compute.regionInstanceGroupManagers.setAutoHealingPolicies
       parameters:
@@ -8893,6 +9523,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the instance template to use when creating new instances or recreating instances in this group. Existing instances are not affected.
       operationId: compute.regionInstanceGroupManagers.setInstanceTemplate
       parameters:
@@ -8937,6 +9570,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Modifies the target pools to which all new instances in this group are assigned. Existing instances in the group are not affected.
       operationId: compute.regionInstanceGroupManagers.setTargetPools
       parameters:
@@ -8981,6 +9617,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.regionInstanceGroupManagers.testIamPermissions
       parameters:
@@ -9019,6 +9658,9 @@ paths:
         - regionInstanceGroupManagers
   '/{project}/regions/{region}/instanceGroups':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of instance group resources contained within the specified region.
       operationId: compute.regionInstanceGroups.list
       parameters:
@@ -9089,6 +9731,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/instanceGroups/{instanceGroup}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified instance group resource.
       operationId: compute.regionInstanceGroups.get
       parameters:
@@ -9139,6 +9784,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Lists the instances in the specified instance group and displays information about the named ports. Depending on the specified options, this method can list all instances or only the instances that are running.'
       operationId: compute.regionInstanceGroups.listInstances
       parameters:
@@ -9218,6 +9866,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the named ports for the specified regional instance group.
       operationId: compute.regionInstanceGroups.setNamedPorts
       parameters:
@@ -9262,6 +9913,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.regionInstanceGroups.testIamPermissions
       parameters:
@@ -9300,6 +9954,9 @@ paths:
         - regionInstanceGroups
   '/{project}/regions/{region}/operations':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of Operation resources contained within the specified region.
       operationId: compute.regionOperations.list
       parameters:
@@ -9370,6 +10027,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/operations/{operation}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified region-specific Operations resource.
       operationId: compute.regionOperations.delete
       parameters:
@@ -9399,6 +10059,9 @@ paths:
       tags:
         - regionOperations
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the specified region-specific Operations resource.
       operationId: compute.regionOperations.get
       parameters:
@@ -9441,6 +10104,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/routers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of Router resources available to the specified project.
       operationId: compute.routers.list
       parameters:
@@ -9510,6 +10176,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a Router resource in the specified project and region using the data included in the request.
       operationId: compute.routers.insert
       parameters:
@@ -9549,6 +10218,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.routers.testIamPermissions
       parameters:
@@ -9587,6 +10259,9 @@ paths:
         - routers
   '/{project}/regions/{region}/routers/{router}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified Router resource.
       operationId: compute.routers.delete
       parameters:
@@ -9618,6 +10293,9 @@ paths:
       tags:
         - routers
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Router resource. Get a list of available routers by making a list() request.
       operationId: compute.routers.get
       parameters:
@@ -9659,6 +10337,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified Router resource with the data included in the request. This method supports patch semantics.
       operationId: compute.routers.patch
       parameters:
@@ -9694,6 +10375,9 @@ paths:
       tags:
         - routers
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified Router resource with the data included in the request.
       operationId: compute.routers.update
       parameters:
@@ -9730,6 +10414,9 @@ paths:
         - routers
   '/{project}/regions/{region}/routers/{router}/getRouterStatus':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves runtime information of the specified router.
       operationId: compute.routers.getRouterStatus
       parameters:
@@ -9780,6 +10467,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Preview fields auto-generated during router create and update operations. Calling this method does NOT create or update the router.
       operationId: compute.routers.preview
       parameters:
@@ -9818,6 +10508,9 @@ paths:
         - routers
   '/{project}/regions/{region}/subnetworks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of subnetworks available to the specified project.
       operationId: compute.subnetworks.list
       parameters:
@@ -9887,6 +10580,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a subnetwork in the specified project using the data included in the request.
       operationId: compute.subnetworks.insert
       parameters:
@@ -9918,6 +10614,9 @@ paths:
         - subnetworks
   '/{project}/regions/{region}/subnetworks/{resource}/getIamPolicy':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the access control policy for a resource. May be empty if no such policy or resource exists.
       operationId: compute.subnetworks.getIamPolicy
       parameters:
@@ -9968,6 +10667,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the access control policy on the specified resource. Replaces any existing policy.
       operationId: compute.subnetworks.setIamPolicy
       parameters:
@@ -10014,6 +10716,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.subnetworks.testIamPermissions
       parameters:
@@ -10052,6 +10757,9 @@ paths:
         - subnetworks
   '/{project}/regions/{region}/subnetworks/{subnetwork}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified subnetwork.
       operationId: compute.subnetworks.delete
       parameters:
@@ -10083,6 +10791,9 @@ paths:
       tags:
         - subnetworks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified subnetwork. Get a list of available subnetworks list() request.
       operationId: compute.subnetworks.get
       parameters:
@@ -10133,6 +10844,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Expands the IP CIDR range of the subnetwork to a specified value.
       operationId: compute.subnetworks.expandIpCidrRange
       parameters:
@@ -10177,6 +10891,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Set whether VMs in this subnet can access Google services without assigning external IP addresses through Cloudpath.
       operationId: compute.subnetworks.setPrivateIpGoogleAccess
       parameters:
@@ -10213,6 +10930,9 @@ paths:
         - subnetworks
   '/{project}/regions/{region}/targetPools':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of target pools available to the specified project and region.
       operationId: compute.targetPools.list
       parameters:
@@ -10282,6 +11002,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a target pool in the specified project and region using the data included in the request.
       operationId: compute.targetPools.insert
       parameters:
@@ -10321,6 +11044,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetPools.testIamPermissions
       parameters:
@@ -10359,6 +11085,9 @@ paths:
         - targetPools
   '/{project}/regions/{region}/targetPools/{targetPool}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified target pool.
       operationId: compute.targetPools.delete
       parameters:
@@ -10390,6 +11119,9 @@ paths:
       tags:
         - targetPools
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified target pool. Get a list of available target pools by making a list() request.
       operationId: compute.targetPools.get
       parameters:
@@ -10440,6 +11172,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Adds health check URLs to a target pool.
       operationId: compute.targetPools.addHealthCheck
       parameters:
@@ -10484,6 +11219,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Adds an instance to a target pool.
       operationId: compute.targetPools.addInstance
       parameters:
@@ -10528,6 +11266,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the most recent health check results for each IP for the instance that is referenced by the given target pool.
       operationId: compute.targetPools.getHealth
       parameters:
@@ -10574,6 +11315,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Removes health check URL from a target pool.
       operationId: compute.targetPools.removeHealthCheck
       parameters:
@@ -10618,6 +11362,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Removes instance URL from a target pool.
       operationId: compute.targetPools.removeInstance
       parameters:
@@ -10662,6 +11409,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes a backup target pool's configurations.
       operationId: compute.targetPools.setBackup
       parameters:
@@ -10702,6 +11452,9 @@ paths:
         - targetPools
   '/{project}/regions/{region}/targetVpnGateways':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of target VPN gateways available to the specified project and region.
       operationId: compute.targetVpnGateways.list
       parameters:
@@ -10771,6 +11524,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a target VPN gateway in the specified project and region using the data included in the request.
       operationId: compute.targetVpnGateways.insert
       parameters:
@@ -10810,6 +11566,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetVpnGateways.testIamPermissions
       parameters:
@@ -10848,6 +11607,9 @@ paths:
         - targetVpnGateways
   '/{project}/regions/{region}/targetVpnGateways/{targetVpnGateway}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified target VPN gateway.
       operationId: compute.targetVpnGateways.delete
       parameters:
@@ -10879,6 +11641,9 @@ paths:
       tags:
         - targetVpnGateways
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified target VPN gateway. Get a list of available target VPN gateways by making a list() request.
       operationId: compute.targetVpnGateways.get
       parameters:
@@ -10921,6 +11686,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/regions/{region}/vpnTunnels':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of VpnTunnel resources contained in the specified project and region.
       operationId: compute.vpnTunnels.list
       parameters:
@@ -10990,6 +11758,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a VpnTunnel resource in the specified project and region using the data included in the request.
       operationId: compute.vpnTunnels.insert
       parameters:
@@ -11029,6 +11800,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.vpnTunnels.testIamPermissions
       parameters:
@@ -11067,6 +11841,9 @@ paths:
         - vpnTunnels
   '/{project}/regions/{region}/vpnTunnels/{vpnTunnel}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified VpnTunnel resource.
       operationId: compute.vpnTunnels.delete
       parameters:
@@ -11098,6 +11875,9 @@ paths:
       tags:
         - vpnTunnels
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified VpnTunnel resource. Get a list of available VPN tunnels by making a list() request.
       operationId: compute.vpnTunnels.get
       parameters:
@@ -11148,6 +11928,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets metadata common to all instances within the specified project using the data included in the request.
       operationId: compute.projects.setCommonInstanceMetadata
       parameters:
@@ -11182,6 +11965,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the default service account of the project. The default service account is used when a VM instance is created with the service account email address set to "default".
       operationId: compute.projects.setDefaultServiceAccount
       parameters:
@@ -11216,6 +12002,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Enables the usage export feature and sets the usage export bucket where reports are stored. If you provide an empty request body using this method, the usage export feature will be disabled.'
       operationId: compute.projects.setUsageExportBucket
       parameters:
@@ -11256,6 +12045,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the URL map for TargetHttpProxy.
       operationId: compute.targetHttpProxies.setUrlMap
       parameters:
@@ -11295,6 +12087,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Replaces SslCertificates for TargetHttpsProxy.
       operationId: compute.targetHttpsProxies.setSslCertificates
       parameters:
@@ -11334,6 +12129,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the URL map for TargetHttpsProxy.
       operationId: compute.targetHttpsProxies.setUrlMap
       parameters:
@@ -11365,6 +12163,9 @@ paths:
         - targetHttpsProxies
   '/{project}/zones':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of Zone resources available to the specified project.
       operationId: compute.zones.list
       parameters:
@@ -11430,6 +12231,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Zone resource. Get a list of available zones by making a list() request.
       operationId: compute.zones.get
       parameters:
@@ -11467,6 +12271,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/autoscalers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of autoscalers contained within the specified zone.
       operationId: compute.autoscalers.list
       parameters:
@@ -11536,6 +12343,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates an autoscaler in the specified project using the data included in the request. This method supports patch semantics.
       operationId: compute.autoscalers.patch
       parameters:
@@ -11571,6 +12381,9 @@ paths:
       tags:
         - autoscalers
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an autoscaler in the specified project using the data included in the request.
       operationId: compute.autoscalers.insert
       parameters:
@@ -11601,6 +12414,9 @@ paths:
       tags:
         - autoscalers
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates an autoscaler in the specified project using the data included in the request.
       operationId: compute.autoscalers.update
       parameters:
@@ -11636,6 +12452,9 @@ paths:
         - autoscalers
   '/{project}/zones/{zone}/autoscalers/{autoscaler}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified autoscaler.
       operationId: compute.autoscalers.delete
       parameters:
@@ -11667,6 +12486,9 @@ paths:
       tags:
         - autoscalers
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified autoscaler resource. Get a list of available autoscalers by making a list() request.
       operationId: compute.autoscalers.get
       parameters:
@@ -11717,6 +12539,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.autoscalers.testIamPermissions
       parameters:
@@ -11755,6 +12580,9 @@ paths:
         - autoscalers
   '/{project}/zones/{zone}/commitments':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of commitments contained within the specified zone.
       operationId: compute.commitments.list
       parameters:
@@ -11824,6 +12652,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an commitment in the specified project using the data included in the request.
       operationId: compute.commitments.insert
       parameters:
@@ -11855,6 +12686,9 @@ paths:
         - commitments
   '/{project}/zones/{zone}/commitments/{commitment}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified commitment resource. Get a list of available commitments by making a list() request.
       operationId: compute.commitments.get
       parameters:
@@ -11897,6 +12731,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/commitments/{resource}/getIamPolicy':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the access control policy for a resource. May be empty if no such policy or resource exists.
       operationId: compute.commitments.getIamPolicy
       parameters:
@@ -11947,6 +12784,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the access control policy on the specified resource. Replaces any existing policy.
       operationId: compute.commitments.setIamPolicy
       parameters:
@@ -11993,6 +12833,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.commitments.testIamPermissions
       parameters:
@@ -12031,6 +12874,9 @@ paths:
         - commitments
   '/{project}/zones/{zone}/diskTypes':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of disk types available to the specified project.
       operationId: compute.diskTypes.list
       parameters:
@@ -12101,6 +12947,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/diskTypes/{diskType}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified disk type. Get a list of available disk types by making a list() request.
       operationId: compute.diskTypes.get
       parameters:
@@ -12143,6 +12992,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/disks':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of persistent disks contained within the specified zone.
       operationId: compute.disks.list
       parameters:
@@ -12212,6 +13064,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Creates a persistent disk in the specified project using the data in the request. You can create a disk with a sourceImage, a sourceSnapshot, or create an empty 500 GB data disk by omitting all properties. You can also create a disk that is larger than the default size by specifying the sizeGb property.'
       operationId: compute.disks.insert
       parameters:
@@ -12247,6 +13102,9 @@ paths:
         - disks
   '/{project}/zones/{zone}/disks/{disk}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Deletes the specified persistent disk. Deleting a disk removes its data permanently and is irreversible. However, deleting a disk does not delete any snapshots previously made from the disk. You must separately delete snapshots.'
       operationId: compute.disks.delete
       parameters:
@@ -12278,6 +13136,9 @@ paths:
       tags:
         - disks
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns a specified persistent disk. Get a list of available persistent disks by making a list() request.
       operationId: compute.disks.get
       parameters:
@@ -12328,6 +13189,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a snapshot of a specified persistent disk.
       operationId: compute.disks.createSnapshot
       parameters:
@@ -12375,6 +13239,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Resizes the specified persistent disk.
       operationId: compute.disks.resize
       parameters:
@@ -12419,6 +13286,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Sets the labels on a disk. To learn more about labels, read the Labeling or Tagging Resources documentation.'
       operationId: compute.disks.setLabels
       parameters:
@@ -12463,6 +13333,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.disks.testIamPermissions
       parameters:
@@ -12501,6 +13374,9 @@ paths:
         - disks
   '/{project}/zones/{zone}/hosts':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of hosts available to the specified project.
       operationId: compute.hosts.list
       parameters:
@@ -12570,6 +13446,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a host resource in the specified project using the data included in the request.
       operationId: compute.hosts.insert
       parameters:
@@ -12601,6 +13480,9 @@ paths:
         - hosts
   '/{project}/zones/{zone}/hosts/{host}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified Host resource.
       operationId: compute.hosts.delete
       parameters:
@@ -12632,6 +13514,9 @@ paths:
       tags:
         - hosts
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified host. Get a list of available hosts by making a list() request.
       operationId: compute.hosts.get
       parameters:
@@ -12674,6 +13559,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/hosts/{resource}/getIamPolicy':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the access control policy for a resource. May be empty if no such policy or resource exists.
       operationId: compute.hosts.getIamPolicy
       parameters:
@@ -12724,6 +13612,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the access control policy on the specified resource. Replaces any existing policy.
       operationId: compute.hosts.setIamPolicy
       parameters:
@@ -12770,6 +13661,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.hosts.testIamPermissions
       parameters:
@@ -12808,6 +13702,9 @@ paths:
         - hosts
   '/{project}/zones/{zone}/instanceGroupManagers':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of managed instance groups that are contained within the specified project and zone.
       operationId: compute.instanceGroupManagers.list
       parameters:
@@ -12877,6 +13774,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Creates a managed instance group using the information that you specify in the request. After the group is created, it schedules an action to create instances in the group using the specified instance template. This operation is marked as DONE when the group is created even if the instances in the group have not yet been created. You must separately verify the status of the individual instances with the listmanagedinstances method.'
       operationId: compute.instanceGroupManagers.insert
       parameters:
@@ -12908,6 +13808,9 @@ paths:
         - instanceGroupManagers
   '/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified managed instance group and all of the instances in that group. Note that the instance group must not belong to a backend service. Read  Deleting an instance group for more information.
       operationId: compute.instanceGroupManagers.delete
       parameters:
@@ -12939,6 +13842,9 @@ paths:
       tags:
         - instanceGroupManagers
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns all of the details about the specified managed instance group. Get a list of available managed instance groups by making a list() request.
       operationId: compute.instanceGroupManagers.get
       parameters:
@@ -12980,6 +13886,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     patch:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a managed instance group using the information that you specify in the request. This operation is marked as DONE when the group is updated even if the instances in the group have not yet been updated. You must separately verify the status of the individual instances with the listmanagedinstances method. This method supports patch semantics.
       operationId: compute.instanceGroupManagers.patch
       parameters:
@@ -13015,6 +13924,9 @@ paths:
       tags:
         - instanceGroupManagers
     put:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates a managed instance group using the information that you specify in the request. This operation is marked as DONE when the group is updated even if the instances in the group have not yet been updated. You must separately verify the status of the individual instances with the listmanagedinstances method.
       operationId: compute.instanceGroupManagers.update
       parameters:
@@ -13059,6 +13971,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Schedules a group action to remove the specified instances from the managed instance group. Abandoning an instance does not delete the instance, but it does remove the instance from any target pools that are applied by the managed instance group. This method reduces the targetSize of the managed instance group by the number of instances that you abandon. This operation is marked as DONE when the action is scheduled even if the instances have not yet been removed from the group. You must separately verify the status of the abandoning action with the listmanagedinstances method.'
       operationId: compute.instanceGroupManagers.abandonInstances
       parameters:
@@ -13103,6 +14018,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Schedules a group action to delete the specified instances in the managed instance group. The instances are also removed from any target pools of which they were a member. This method reduces the targetSize of the managed instance group by the number of instances that you delete. This operation is marked as DONE when the action is scheduled even if the instances are still being deleted. You must separately verify the status of the deleting action with the listmanagedinstances method.
       operationId: compute.instanceGroupManagers.deleteInstances
       parameters:
@@ -13147,6 +14065,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Lists all of the instances in the managed instance group. Each instance in the list has a currentAction, which indicates the action that the managed instance group is performing on the instance. For example, if the group is still creating an instance, the currentAction is CREATING. If a previous action failed, the list displays the errors for that failed action.'
       operationId: compute.instanceGroupManagers.listManagedInstances
       parameters:
@@ -13204,6 +14125,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Schedules a group action to recreate the specified instances in the managed instance group. The instances are deleted and recreated using the current instance template for the managed instance group. This operation is marked as DONE when the action is scheduled even if the instances have not yet been recreated. You must separately verify the status of the recreating action with the listmanagedinstances method.
       operationId: compute.instanceGroupManagers.recreateInstances
       parameters:
@@ -13248,6 +14172,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Resizes the managed instance group. If you increase the size, the group creates new instances using the current instance template. If you decrease the size, the group deletes instances. The resize operation is marked DONE when the resize actions are scheduled even if the group has not yet added or deleted any instances. You must separately verify the status of the creating or deleting actions with the listmanagedinstances method.'
       operationId: compute.instanceGroupManagers.resize
       parameters:
@@ -13293,6 +14220,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: |-
         Resizes the managed instance group with advanced configuration options like disabling creation retries. This is an extended version of the resize method.
 
@@ -13340,6 +14270,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Modifies the autohealing policies.
       operationId: compute.instanceGroupManagers.setAutoHealingPolicies
       parameters:
@@ -13384,6 +14317,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Specifies the instance template to use when creating new instances in this group. The templates for existing instances in the group do not change unless you recreate them.
       operationId: compute.instanceGroupManagers.setInstanceTemplate
       parameters:
@@ -13428,6 +14364,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Modifies the target pools to which all instances in this managed instance group are assigned. The target pools automatically apply to all of the instances in the managed instance group. This operation is marked DONE when you make the request even if the instances have not yet been added to their target pools. The change might take some time to apply to all of the instances in the group depending on the size of the group.
       operationId: compute.instanceGroupManagers.setTargetPools
       parameters:
@@ -13472,6 +14411,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.instanceGroupManagers.testIamPermissions
       parameters:
@@ -13510,6 +14452,9 @@ paths:
         - instanceGroupManagers
   '/{project}/zones/{zone}/instanceGroups':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of instance groups that are located in the specified project and zone.
       operationId: compute.instanceGroups.list
       parameters:
@@ -13579,6 +14524,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an instance group in the specified project using the parameters that are included in the request.
       operationId: compute.instanceGroups.insert
       parameters:
@@ -13610,6 +14558,9 @@ paths:
         - instanceGroups
   '/{project}/zones/{zone}/instanceGroups/{instanceGroup}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified instance group. The instances in the group are not deleted. Note that instance group must not belong to a backend service. Read  Deleting an instance group for more information.
       operationId: compute.instanceGroups.delete
       parameters:
@@ -13641,6 +14592,9 @@ paths:
       tags:
         - instanceGroups
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified instance group. Get a list of available instance groups by making a list() request.
       operationId: compute.instanceGroups.get
       parameters:
@@ -13691,6 +14645,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Adds a list of instances to the specified instance group. All of the instances in the instance group must be in the same network/subnetwork. Read  Adding instances for more information.
       operationId: compute.instanceGroups.addInstances
       parameters:
@@ -13735,6 +14692,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Lists the instances in the specified instance group.
       operationId: compute.instanceGroups.listInstances
       parameters:
@@ -13814,6 +14774,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Removes one or more instances from the specified instance group, but does not delete those instances.'
       operationId: compute.instanceGroups.removeInstances
       parameters:
@@ -13858,6 +14821,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the named ports for the specified instance group.
       operationId: compute.instanceGroups.setNamedPorts
       parameters:
@@ -13902,6 +14868,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.instanceGroups.testIamPermissions
       parameters:
@@ -13940,6 +14909,9 @@ paths:
         - instanceGroups
   '/{project}/zones/{zone}/instances':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the list of instances contained within the specified zone.
       operationId: compute.instances.list
       parameters:
@@ -14009,6 +14981,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates an instance resource in the specified project using the data included in the request.
       operationId: compute.instances.insert
       parameters:
@@ -14040,6 +15015,9 @@ paths:
         - instances
   '/{project}/zones/{zone}/instances/{instance}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Deletes the specified Instance resource. For more information, see Stopping or Deleting an Instance.'
       operationId: compute.instances.delete
       parameters:
@@ -14071,6 +15049,9 @@ paths:
       tags:
         - instances
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified Instance resource. Get a list of available instances by making a list() request.
       operationId: compute.instances.get
       parameters:
@@ -14121,6 +15102,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Adds an access config to an instance's network interface.
       operationId: compute.instances.addAccessConfig
       parameters:
@@ -14170,6 +15154,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Attaches a Disk resource to an instance.
       operationId: compute.instances.attachDisk
       parameters:
@@ -14218,6 +15205,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes an access config from an instance's network interface.
       operationId: compute.instances.deleteAccessConfig
       parameters:
@@ -14268,6 +15258,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Detaches a disk from an instance.
       operationId: compute.instances.detachDisk
       parameters:
@@ -14313,6 +15306,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Performs a hard reset on the instance.
       operationId: compute.instances.reset
       parameters:
@@ -14345,6 +15341,9 @@ paths:
         - instances
   '/{project}/zones/{zone}/instances/{instance}/serialPort':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified instance's serial port output.
       operationId: compute.instances.getSerialPortOutput
       parameters:
@@ -14406,6 +15405,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the auto-delete flag for a disk attached to an instance.
       operationId: compute.instances.setDiskAutoDelete
       parameters:
@@ -14456,6 +15458,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Sets labels on an instance. To learn more about labels, read the Labeling or Tagging Resources documentation.'
       operationId: compute.instances.setLabels
       parameters:
@@ -14500,6 +15505,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Changes the machine type for a stopped instance to the machine type specified in the request.
       operationId: compute.instances.setMachineType
       parameters:
@@ -14544,6 +15552,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets metadata for the specified instance to the data included in the request.
       operationId: compute.instances.setMetadata
       parameters:
@@ -14588,6 +15599,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets an instance's scheduling options.
       operationId: compute.instances.setScheduling
       parameters:
@@ -14632,6 +15646,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the service account on the instance.
       operationId: compute.instances.setServiceAccount
       parameters:
@@ -14676,6 +15693,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets tags for the specified instance to the data included in the request.
       operationId: compute.instances.setTags
       parameters:
@@ -14720,6 +15740,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Starts an instance that was stopped using the using the instances().stop method. For more information, see Restart an instance.'
       operationId: compute.instances.start
       parameters:
@@ -14760,6 +15783,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Starts an instance that was stopped using the using the instances().stop method. For more information, see Restart an instance.'
       operationId: compute.instances.startWithEncryptionKey
       parameters:
@@ -14804,6 +15830,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. Stopped instances do not incur per-minute, virtual machine usage charges while they are stopped, but any resources that the virtual machine is using, such as persistent disks and static IP addresses, will continue to be charged until they are deleted. For more information, see Stopping an instance.'
       operationId: compute.instances.stop
       parameters:
@@ -14848,6 +15877,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: 'This method suspends a running instance, saving its state to persistent storage, and allows you to resume the instance at a later time. Suspended instances incur reduced per-minute, virtual machine usage charges while they are suspended. Any resources the virtual machine is using, such as persistent disks and static IP addresses, will continue to be charged until they are deleted.'
       operationId: compute.instances.suspend
       parameters:
@@ -14892,6 +15924,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Updates the specified access config from an instance's network interface with the data included in the request.
       operationId: compute.instances.updateAccessConfig
       parameters:
@@ -14933,6 +15968,9 @@ paths:
         - instances
   '/{project}/zones/{zone}/instances/{resource}/getIamPolicy':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Gets the access control policy for a resource. May be empty if no such policy or resource exists.
       operationId: compute.instances.getIamPolicy
       parameters:
@@ -14983,6 +16021,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Sets the access control policy on the specified resource. Replaces any existing policy.
       operationId: compute.instances.setIamPolicy
       parameters:
@@ -15029,6 +16070,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.instances.testIamPermissions
       parameters:
@@ -15067,6 +16111,9 @@ paths:
         - instances
   '/{project}/zones/{zone}/machineTypes':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of machine types available to the specified project.
       operationId: compute.machineTypes.list
       parameters:
@@ -15137,6 +16184,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/machineTypes/{machineType}':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified machine type. Get a list of available machine types by making a list() request.
       operationId: compute.machineTypes.get
       parameters:
@@ -15179,6 +16229,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/operations':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of Operation resources contained within the specified zone.
       operationId: compute.zoneOperations.list
       parameters:
@@ -15249,6 +16302,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/operations/{operation}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified zone-specific Operations resource.
       operationId: compute.zoneOperations.delete
       parameters:
@@ -15278,6 +16334,9 @@ paths:
       tags:
         - zoneOperations
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves the specified zone-specific Operations resource.
       operationId: compute.zoneOperations.get
       parameters:
@@ -15320,6 +16379,9 @@ paths:
       - $ref: '#/parameters/userIp'
   '/{project}/zones/{zone}/targetInstances':
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Retrieves a list of TargetInstance resources available to the specified project and zone.
       operationId: compute.targetInstances.list
       parameters:
@@ -15389,6 +16451,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Creates a TargetInstance resource in the specified project and zone using the data included in the request.
       operationId: compute.targetInstances.insert
       parameters:
@@ -15428,6 +16493,9 @@ paths:
       - $ref: '#/parameters/quotaUser'
       - $ref: '#/parameters/userIp'
     post:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns permissions that a caller has on the specified resource.
       operationId: compute.targetInstances.testIamPermissions
       parameters:
@@ -15466,6 +16534,9 @@ paths:
         - targetInstances
   '/{project}/zones/{zone}/targetInstances/{targetInstance}':
     delete:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Deletes the specified TargetInstance resource.
       operationId: compute.targetInstances.delete
       parameters:
@@ -15497,6 +16568,9 @@ paths:
       tags:
         - targetInstances
     get:
+      x-foo:
+        t1: 't1'
+        t2: 't1'
       description: Returns the specified TargetInstance resource. Get a list of available target instances by making a list() request.
       operationId: compute.targetInstances.get
       parameters:
@@ -15540,6 +16614,9 @@ paths:
 definitions:
   AccessConfig:
     description: An access configuration attached to an instance's network interface. Only one access config per instance is supported.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       dnsName:
         description: '[Output Only] The public DNS domain name for the instance.'
@@ -15578,6 +16655,9 @@ definitions:
     type: object
   Address:
     description: A reserved address resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       address:
         description: The static external IP address represented by this resource.
@@ -15660,6 +16740,9 @@ definitions:
     type: object
   AddressList:
     description: Contains a list of addresses.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -15731,6 +16814,9 @@ definitions:
     type: object
   AliasIpRange:
     description: An alias IP range attached to an instance's network interface.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       ipCidrRange:
         description: 'The IP CIDR range represented by this alias IP range. This IP CIDR range must belong to the specified subnetwork and cannot contain IP addresses reserved by system or used by other network interfaces. This range may be a single IP address (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).'
@@ -15741,6 +16827,9 @@ definitions:
     type: object
   AttachedDisk:
     description: An instance-attached disk resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       autoDelete:
         description: Specifies whether the disk will be auto-deleted when the instance is deleted (but not when the disk is detached from the instance).
@@ -15877,6 +16966,9 @@ definitions:
     type: object
   AuditConfig:
     description: Provides the configuration for non-admin_activity logging for a service. Controls exemptions and specific log sub-types.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       auditLogConfigs:
         description: The configuration for each type of logging
@@ -15894,6 +16986,9 @@ definitions:
     type: object
   AuditLogConfig:
     description: Provides the configuration for a sub-type of logging.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       exemptedMembers:
         description: Specifies the identities that are exempted from this type of logging Follows the same format of Binding.members.
@@ -15911,6 +17006,9 @@ definitions:
     type: object
   Autoscaler:
     description: 'Represents an Autoscaler resource. Autoscalers allow you to automatically scale virtual machine instances in managed instance groups according to an autoscaling policy that you define. For more information, read Autoscaling Groups of Instances.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       autoscalingPolicy:
         $ref: '#/definitions/AutoscalingPolicy'
@@ -15986,6 +17084,9 @@ definitions:
     type: object
   AutoscalerList:
     description: Contains a list of Autoscaler resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -16080,6 +17181,9 @@ definitions:
     type: object
   AutoscalingPolicy:
     description: Cloud Autoscaler policy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       coolDownPeriodSec:
         description: |-
@@ -16113,6 +17217,9 @@ definitions:
     type: object
   AutoscalingPolicyCpuUtilization:
     description: CPU utilization policy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       utilizationTarget:
         description: |-
@@ -16126,6 +17233,9 @@ definitions:
     type: object
   AutoscalingPolicyCustomMetricUtilization:
     description: Custom utilization metric policy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       metric:
         description: |-
@@ -16150,6 +17260,9 @@ definitions:
     type: object
   AutoscalingPolicyLoadBalancingUtilization:
     description: Configuration parameters of autoscaling based on load balancing.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       utilizationTarget:
         description: 'Fraction of backend capacity utilization (set in HTTP(s) load balancing configuration) that autoscaler should maintain. Must be a positive float value. If not defined, the default is 0.8.'
@@ -16158,6 +17271,9 @@ definitions:
     type: object
   AutoscalingPolicyQueueBasedScaling:
     description: Configuration parameters of autoscaling based on queuing system.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       acceptableBacklogPerInstance:
         description: 'Scaling based on the average number of tasks in the queue per each active instance. The autoscaler keeps the average number of tasks per instance below this number, based on data collected in the last couple of minutes. The autoscaler will also take into account incoming tasks when calculating when to scale.'
@@ -16173,6 +17289,9 @@ definitions:
     type: object
   AutoscalingPolicyQueueBasedScalingCloudPubSub:
     description: Configuration parameters for scaling based on Cloud Pub/Sub subscription queue.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       subscription:
         description: Cloud Pub/Sub subscription used for scaling. Provide the partial URL (starting with projects/) or just the subscription name. The subscription must be assigned to the topic specified in topicName and must be in a pull configuration. The subscription must belong to the same project as the Autoscaler.
@@ -16183,6 +17302,9 @@ definitions:
     type: object
   Backend:
     description: Message containing information of one individual backend.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       balancingMode:
         description: |-
@@ -16253,6 +17375,9 @@ definitions:
     type: object
   BackendBucket:
     description: A BackendBucket resource. This resource defines a Cloud Storage bucket.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       bucketName:
         description: Cloud Storage bucket name.
@@ -16284,6 +17409,9 @@ definitions:
     type: object
   BackendBucketList:
     description: Contains a list of BackendBucket resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource; defined by the server.'
@@ -16306,6 +17434,9 @@ definitions:
     type: object
   BackendSSLPolicy:
     description: Message containing backend SSL policies.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       pinnedPeerCertificates:
         description: 'List of PEM-encoded peer certificates, from which the public keys are extracted for authenticating the backend service.'
@@ -16315,6 +17446,9 @@ definitions:
     type: object
   BackendService:
     description: A BackendService resource. This resource defines a group of backend virtual machines and their serving capacity.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       affinityCookieTtlSec:
         description: |-
@@ -16442,6 +17576,9 @@ definitions:
     type: object
   BackendServiceAggregatedList:
     description: Contains a list of BackendServicesScopedList.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource; defined by the server.'
@@ -16465,6 +17602,9 @@ definitions:
     type: object
   BackendServiceCdnPolicy:
     description: Message containing Cloud CDN configuration for a backend service.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       cacheKeyPolicy:
         $ref: '#/definitions/CacheKeyPolicy'
@@ -16483,6 +17623,9 @@ definitions:
     type: object
   BackendServiceIAP:
     description: Identity-Aware Proxy (Cloud Gatekeeper)
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       enabled:
         type: boolean
@@ -16495,6 +17638,9 @@ definitions:
     type: object
   BackendServiceList:
     description: Contains a list of BackendService resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource; defined by the server.'
@@ -16566,6 +17712,9 @@ definitions:
     type: object
   Binding:
     description: Associates `members` with a `role`.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       members:
         description: |-
@@ -16601,6 +17750,9 @@ definitions:
     type: object
   CacheKeyPolicy:
     description: Message containing what to include in the cache key for a request for Cloud CDN.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       includeHost:
         description: 'If true, requests to different hosts will be cached separately.'
@@ -16624,6 +17776,9 @@ definitions:
     type: object
   Commitment:
     description: 'A usage-commitment with a start / end time. Users create commitments for particular resources (e.g. memory). Actual usage is first deducted from available commitments made prior, perhaps at a reduced price (as laid out in the commitment).'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -16703,6 +17858,9 @@ definitions:
     type: object
   CommitmentList:
     description: Contains a list of Commitment resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -16774,6 +17932,9 @@ definitions:
     type: object
   Condition:
     description: A condition to be met.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       iam:
         description: Trusted attributes supplied by the IAM system.
@@ -16816,6 +17977,9 @@ definitions:
     type: object
   ConnectionDraining:
     description: Message containing connection draining configuration.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       drainingTimeoutSec:
         description: 'Time for which instance will be drained (not accept new connections, but still work to finish started).'
@@ -16824,6 +17988,9 @@ definitions:
     type: object
   CustomerEncryptionKey:
     description: Represents a customer-supplied encryption key
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       rawKey:
         description: 'Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.'
@@ -16852,6 +18019,9 @@ definitions:
     type: object
   DeprecationStatus:
     description: Deprecation status for a public resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       deleted:
         description: An optional RFC3339 timestamp on or after which the state of this resource is intended to change to DELETED. This is only informational and the status will not change unless the client explicitly changes it.
@@ -16875,6 +18045,9 @@ definitions:
     type: object
   Disk:
     description: A Disk resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -17037,6 +18210,9 @@ definitions:
     type: object
   DiskList:
     description: A list of Disk resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -17076,6 +18252,9 @@ definitions:
     type: object
   DiskType:
     description: A DiskType resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -17136,6 +18315,9 @@ definitions:
     type: object
   DiskTypeList:
     description: Contains a list of disk types.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -17263,6 +18445,9 @@ definitions:
     type: object
   Firewall:
     description: Represents a Firewall resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       allowed:
         description: The list of ALLOW rules specified by this firewall. Each rule specifies a protocol and port-range tuple that describes a permitted connection.
@@ -17361,6 +18546,9 @@ definitions:
     type: object
   FirewallList:
     description: Contains a list of firewalls.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -17383,6 +18571,9 @@ definitions:
     type: object
   FixedOrPercent:
     description: Encapsulates numeric value that can be either absolute or relative.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       calculated:
         description: '[Output Only] Absolute value calculated based on mode: mode = fixed -> calculated = fixed = percent -> calculated = ceiling(percent/100 * base_value)'
@@ -17399,6 +18590,9 @@ definitions:
     type: object
   ForwardingRule:
     description: 'A ForwardingRule resource. A ForwardingRule resource specifies which pool of target virtual machines to forward a packet to if it matches the given [IPAddress, IPProtocol, portRange] tuple.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       IPAddress:
         description: |-
@@ -17552,6 +18746,9 @@ definitions:
     type: object
   ForwardingRuleList:
     description: Contains a list of ForwardingRule resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource. Set by the server.'
@@ -17635,6 +18832,9 @@ definitions:
     type: object
   GuestOsFeature:
     description: Guest OS features.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       type:
         description: 'The type of supported feature. Currenty only VIRTIO_SCSI_MULTIQUEUE is supported. For newer Windows images, the server might also populate this property with the value WINDOWS to indicate that this is a Windows image. This value is purely informational and does not enable or disable any features.'
@@ -17722,6 +18922,9 @@ definitions:
     type: object
   HealthCheck:
     description: 'An HealthCheck resource. This resource defines a template for how individual virtual machines should be checked for health, via one of the supported protocols.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       checkIntervalSec:
         description: How often (in seconds) to send a health check. The default value is 5 seconds.
@@ -17786,6 +18989,9 @@ definitions:
     type: object
   HealthCheckList:
     description: Contains a list of HealthCheck resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -17908,6 +19114,9 @@ definitions:
     type: object
   HostList:
     description: Contains a list of hosts.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -17930,6 +19139,9 @@ definitions:
     type: object
   HostRule:
     description: 'UrlMaps A host-matching rule for a URL. If matched, will use the named PathMatcher to select the BackendService.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       description:
         description: An optional description of this resource. Provide this property when you create the resource.
@@ -17994,6 +19206,9 @@ definitions:
     type: object
   HttpHealthCheck:
     description: 'An HttpHealthCheck resource. This resource defines a template for how individual instances should be checked for health, via HTTP.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       checkIntervalSec:
         description: How often (in seconds) to send a health check. The default value is 5 seconds.
@@ -18045,6 +19260,9 @@ definitions:
     type: object
   HttpHealthCheckList:
     description: Contains a list of HttpHealthCheck resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource. Defined by the server.'
@@ -18067,6 +19285,9 @@ definitions:
     type: object
   HttpsHealthCheck:
     description: 'An HttpsHealthCheck resource. This resource defines a template for how individual instances should be checked for health, via HTTPS.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       checkIntervalSec:
         description: How often (in seconds) to send a health check. The default value is 5 seconds.
@@ -18118,6 +19339,9 @@ definitions:
     type: object
   HttpsHealthCheckList:
     description: Contains a list of HttpsHealthCheck resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource; defined by the server.'
@@ -18140,6 +19364,9 @@ definitions:
     type: object
   Image:
     description: An Image resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       archiveSizeBytes:
         description: Size of the image tar.gz archive stored in Google Cloud Storage (in bytes).
@@ -18256,6 +19483,9 @@ definitions:
     type: object
   ImageList:
     description: Contains a list of images.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -18278,6 +19508,9 @@ definitions:
     type: object
   Instance:
     description: An Instance resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       canIpForward:
         description: 'Allows this instance to send and receive packets with non-matching destination or source IPs. This is required if you plan to use this instance to forward routes. For more information, see Enabling IP Forwarding.'
@@ -18494,6 +19727,9 @@ definitions:
     type: object
   InstanceGroupList:
     description: A list of InstanceGroup resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] A unique identifier for this list of instance groups. The server generates this identifier.'
@@ -18516,6 +19752,9 @@ definitions:
     type: object
   InstanceGroupManager:
     description: An Instance Group Manager resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       autoHealingPolicies:
         description: The autohealing policy for this managed instance group. You can specify only one value.
@@ -18680,6 +19919,9 @@ definitions:
     type: object
   InstanceGroupManagerList:
     description: '[Output Only] A list of managed instance groups.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] A unique identifier for this resource type. The server generates this identifier.'
@@ -18986,6 +20228,9 @@ definitions:
     type: object
   InstanceList:
     description: Contains a list of instances.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -19025,6 +20270,9 @@ definitions:
     type: object
   InstanceProperties:
     description: ''
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       canIpForward:
         description: 'Enables instances created based on this template to send packets with source IP addresses other than their own and receive packets with destination IP addresses other than their own. If these instances will be used as an IP gateway or it will be set as the next-hop in a Route resource, specify true. If unsure, leave this set to false. See the Enable IP forwarding for instances documentation for more information.'
@@ -19073,6 +20321,9 @@ definitions:
     type: object
   InstanceTemplate:
     description: An Instance Template resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] The creation timestamp for this instance template in RFC3339 text format.'
@@ -19107,6 +20358,9 @@ definitions:
     type: object
   InstanceTemplateList:
     description: A list of instance templates.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] A unique identifier for this instance template. The server defines this identifier.'
@@ -19252,6 +20506,9 @@ definitions:
     type: object
   License:
     description: A license resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       chargesUseFee:
         description: '[Output Only] If true, the customer will be charged license fee for running software that contains this license on an instance.'
@@ -19277,6 +20534,9 @@ definitions:
     type: object
   LogConfig:
     description: Specifies what kind of log the caller must write
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       counter:
         $ref: '#/definitions/LogConfigCounterOptions'
@@ -19284,6 +20544,9 @@ definitions:
     type: object
   LogConfigCounterOptions:
     description: Options for counters
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       field:
         description: The field value to attribute.
@@ -19294,6 +20557,9 @@ definitions:
     type: object
   MachineType:
     description: A Machine Type resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -19366,6 +20632,9 @@ definitions:
     type: object
   MachineTypeList:
     description: Contains a list of machine types.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -19517,6 +20786,9 @@ definitions:
     type: object
   Metadata:
     description: A metadata key/value entry.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       fingerprint:
         description: 'Specifies a fingerprint for this request, which is essentially a hash of the metadata''s contents and used for optimistic locking. The fingerprint is initially generated by Compute Engine and changes after every request to modify or update metadata. You must always provide an up-to-date fingerprint hash in order to update or change metadata.'
@@ -19542,6 +20814,9 @@ definitions:
     type: object
   NamedPort:
     description: 'The named port. For example: .'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       name:
         description: 'The name for this named port. The name must be 1-63 characters long, and comply with RFC1035.'
@@ -19553,6 +20828,9 @@ definitions:
     type: object
   Network:
     description: Represents a Network resource. Read Networks and Firewalls for more information.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       IPv4Range:
         description: 'The range of internal addresses that are legal on this network. This range is a CIDR specification, for example: 192.168.0.0/16. Provided by the client when the network is created.'
@@ -19614,6 +20892,9 @@ definitions:
     type: object
   NetworkInterface:
     description: A network interface resource attached to an instance.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       accessConfigs:
         description: 'An array of configurations for this interface. Currently, only one access config, ONE_TO_ONE_NAT, is supported. If there are no accessConfigs specified, then this instance will have no external internet access.'
@@ -19651,6 +20932,9 @@ definitions:
     type: object
   NetworkList:
     description: Contains a list of networks.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -19673,6 +20957,9 @@ definitions:
     type: object
   NetworkPeering:
     description: 'A network peering attached to a network resource. The message includes the peering name, peer network, peering state, and a flag indicating whether Google Compute Engine should automatically create routes for the peering.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       autoCreateRoutes:
         description: 'Whether full mesh connectivity is created and managed automatically. When it is set to true, Google Compute Engine will automatically create and manage the routes between two networks when the state is ACTIVE. Otherwise, user needs to create routes manually to route packets to peer network.'
@@ -19713,6 +21000,9 @@ definitions:
     type: object
   Operation:
     description: 'An Operation resource, used to manage asynchronous API requests.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       clientOperationId:
         description: '[Output Only] Reserved for future use.'
@@ -19873,6 +21163,9 @@ definitions:
     type: object
   OperationList:
     description: Contains a list of Operation resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -19944,6 +21237,9 @@ definitions:
     type: object
   PathMatcher:
     description: 'A matcher for the path portion of the URL. The BackendService from the longest-matched rule will serve the URL. If no rule was matched, the default service will be used.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       defaultService:
         description: |-
@@ -19966,6 +21262,9 @@ definitions:
     type: object
   PathRule:
     description: 'A path-matching rule for a URL. If matched, will use the specified BackendService to handle the traffic arriving at this URL.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       paths:
         description: 'The list of path patterns to match. Each must start with / and the only place a * is allowed is at the end following a /. The string fed to the path matcher does not include any text after the first ? or #, and those chars are not allowed here.'
@@ -20025,6 +21324,9 @@ definitions:
     type: object
   Project:
     description: 'A Project resource. Projects can only be created in the Google Cloud Platform Console. Unless marked otherwise, values can only be modified in the console.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       commonInstanceMetadata:
         $ref: '#/definitions/Metadata'
@@ -20110,6 +21412,9 @@ definitions:
     type: object
   Quota:
     description: A quotas entry.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       limit:
         description: '[Output Only] Quota limit for this metric.'
@@ -20163,6 +21468,9 @@ definitions:
     type: object
   Region:
     description: Region resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -20206,6 +21514,9 @@ definitions:
     type: object
   RegionAutoscalerList:
     description: Contains a list of autoscalers.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -20256,6 +21567,9 @@ definitions:
     type: object
   RegionInstanceGroupList:
     description: Contains a list of InstanceGroup resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -20278,6 +21592,9 @@ definitions:
     type: object
   RegionInstanceGroupManagerList:
     description: Contains a list of managed instance groups.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -20403,6 +21720,9 @@ definitions:
     type: object
   RegionList:
     description: Contains a list of region resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -20437,6 +21757,9 @@ definitions:
     type: object
   ResourceCommitment:
     description: Commitment for a particular resource (a Commitment is composed of one or more of these).
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       amount:
         description: 'The amount of the resource purchased (in a type-dependent unit, such as bytes).'
@@ -20567,6 +21890,9 @@ definitions:
     type: object
   RouteList:
     description: Contains a list of Route resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource. Defined by the server.'
@@ -20589,6 +21915,9 @@ definitions:
     type: object
   Router:
     description: Router resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       bgp:
         $ref: '#/definitions/RouterBgp'
@@ -20633,6 +21962,9 @@ definitions:
     type: object
   RouterAggregatedList:
     description: Contains a list of routers.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -20700,6 +22032,9 @@ definitions:
     type: object
   RouterList:
     description: Contains a list of Router resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -20841,6 +22176,9 @@ definitions:
     type: object
   Rule:
     description: A rule to be applied in a Policy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       action:
         description: Required
@@ -20905,6 +22243,9 @@ definitions:
     type: object
   Scheduling:
     description: Sets the scheduling options for an Instance.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       automaticRestart:
         description: Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user). You can only set the automatic restart option for standard instances. Preemptible instances cannot be automatically restarted.
@@ -20921,6 +22262,9 @@ definitions:
     type: object
   SerialPortOutput:
     description: An instance's serial console output.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       contents:
         description: '[Output Only] The contents of the console output.'
@@ -20943,6 +22287,9 @@ definitions:
     type: object
   ServiceAccount:
     description: A service account.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       email:
         description: Email address of the service account.
@@ -20955,6 +22302,9 @@ definitions:
     type: object
   Snapshot:
     description: A persistent disk snapshot resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -21039,6 +22389,9 @@ definitions:
     type: object
   SnapshotList:
     description: Contains a list of Snapshot resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21061,6 +22414,9 @@ definitions:
     type: object
   SslCertificate:
     description: An SslCertificate resource. This resource provides a mechanism to upload an SSL key and certificate to the load balancer to serve secure connections from the user.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       certificate:
         description: A local certificate file. The certificate must be in PEM format. The certificate chain must be no greater than 5 certs long. The chain must include at least one intermediate cert.
@@ -21092,6 +22448,9 @@ definitions:
     type: object
   SslCertificateList:
     description: Contains a list of SslCertificate resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource. Defined by the server.'
@@ -21114,6 +22473,9 @@ definitions:
     type: object
   Subnetwork:
     description: A Subnetwork resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -21181,6 +22543,9 @@ definitions:
     type: object
   SubnetworkList:
     description: Contains a list of Subnetwork resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21203,6 +22568,9 @@ definitions:
     type: object
   SubnetworkSecondaryRange:
     description: Represents a secondary IP range of a subnetwork.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       ipCidrRange:
         description: The range of IP addresses belonging to this subnetwork secondary range. Provide this property when you create the subnetwork. Ranges must be unique and non-overlapping with all primary and secondary IP ranges within a network.
@@ -21295,6 +22663,9 @@ definitions:
     type: object
   Tags:
     description: A set of instance tags.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       fingerprint:
         description: |-
@@ -21311,6 +22682,9 @@ definitions:
     type: object
   TargetHttpProxy:
     description: A TargetHttpProxy resource. This resource defines an HTTP proxy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -21339,6 +22713,9 @@ definitions:
     type: object
   TargetHttpProxyList:
     description: A list of TargetHttpProxy resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21369,6 +22746,9 @@ definitions:
     type: object
   TargetHttpsProxy:
     description: A TargetHttpsProxy resource. This resource defines an HTTPS proxy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       clientSslPolicy:
         description: URL to ClientSslPolicy resource which controls the set of allowed SSL versions and ciphers.
@@ -21409,6 +22789,9 @@ definitions:
     type: object
   TargetHttpsProxyList:
     description: Contains a list of TargetHttpsProxy resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21431,6 +22814,9 @@ definitions:
     type: object
   TargetInstance:
     description: A TargetInstance resource. This resource defines an endpoint instance that terminates traffic of certain protocols.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -21493,6 +22879,9 @@ definitions:
     type: object
   TargetInstanceList:
     description: Contains a list of TargetInstance resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21564,6 +22953,9 @@ definitions:
     type: object
   TargetPool:
     description: 'A TargetPool resource. This resource defines a pool of instances, associated HttpHealthCheck resources, and the fallback target pool.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       backupPool:
         description: |-
@@ -21665,6 +23057,9 @@ definitions:
     type: object
   TargetPoolList:
     description: Contains a list of TargetPool resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource. Defined by the server.'
@@ -21804,6 +23199,9 @@ definitions:
     type: object
   TargetSslProxy:
     description: A TargetSslProxy resource. This resource defines an SSL proxy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       clientSslPolicy:
         description: URL to ClientSslPolicy resource which controls the set of allowed SSL versions and ciphers.
@@ -21846,6 +23244,9 @@ definitions:
     type: object
   TargetSslProxyList:
     description: Contains a list of TargetSslProxy resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21883,6 +23284,9 @@ definitions:
     type: object
   TargetTcpProxy:
     description: A TargetTcpProxy resource. This resource defines a TCP proxy.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -21917,6 +23321,9 @@ definitions:
     type: object
   TargetTcpProxyList:
     description: Contains a list of TargetTcpProxy resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -21939,6 +23346,9 @@ definitions:
     type: object
   TargetVpnGateway:
     description: Represents a Target VPN gateway resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -22010,6 +23420,9 @@ definitions:
     type: object
   TargetVpnGatewayList:
     description: Contains a list of TargetVpnGateway resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -22124,6 +23537,9 @@ definitions:
     type: object
   UrlMap:
     description: 'A UrlMap resource. This resource defines the mapping from URL to the BackendService resource, based on the "longest-match" of the URL''s host and path.'
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -22171,6 +23587,9 @@ definitions:
     type: object
   UrlMapList:
     description: Contains a list of UrlMap resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource. Set by the server.'
@@ -22198,6 +23617,9 @@ definitions:
     type: object
   UrlMapTest:
     description: Message for the expected URL mappings.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       description:
         description: Description of this test case.
@@ -22214,6 +23636,9 @@ definitions:
     type: object
   UrlMapValidationResult:
     description: Message representing the validation result for a UrlMap.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       loadErrors:
         items:
@@ -22243,6 +23668,9 @@ definitions:
     type: object
   UsageExportLocation:
     description: The location in Cloud Storage and naming method of the daily usage report. Contains bucket_name and report_name prefix.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       bucketName:
         description: 'The name of an existing bucket in Cloud Storage where the usage report object is stored. The Google Service Account is granted write access to this bucket. This can either be the bucket name by itself, such as example-bucket, or the bucket name with gs:// or https://storage.googleapis.com/ in front of it, such as gs://example-bucket.'
@@ -22362,6 +23790,9 @@ definitions:
     type: object
   VpnTunnelList:
     description: Contains a list of VpnTunnel resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] The unique identifier for the resource. This identifier is defined by the server.'
@@ -22454,6 +23885,9 @@ definitions:
     type: object
   XpnResourceId:
     description: XpnResourceId
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: 'The ID of the XPN resource. In the case of projects, this field matches the project''s name, not the canonical ID.'
@@ -22467,6 +23901,9 @@ definitions:
     type: object
   Zone:
     description: A Zone resource.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       creationTimestamp:
         description: '[Output Only] Creation timestamp in RFC3339 text format.'
@@ -22503,6 +23940,9 @@ definitions:
     type: object
   ZoneList:
     description: Contains a list of zone resources.
+    x-foo:
+      t1: 't1'
+      t2: 't1'
     properties:
       id:
         description: '[Output Only] Unique identifier for the resource; defined by the server.'

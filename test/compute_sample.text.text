@@ -107,6 +107,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -254,6 +264,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -405,6 +425,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -552,6 +582,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -703,6 +743,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -850,6 +900,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -1001,6 +1061,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -1148,6 +1218,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -1299,6 +1379,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -1446,6 +1536,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -1597,6 +1697,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -1744,6 +1854,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -1895,6 +2015,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -2042,6 +2172,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -2193,6 +2333,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -2340,6 +2490,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -2491,6 +2651,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -2638,6 +2808,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -2789,6 +2969,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -2938,6 +3128,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -3025,6 +3225,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -3127,6 +3337,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -3214,6 +3434,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -3316,6 +3546,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -3413,6 +3653,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -3508,6 +3758,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -3659,6 +3919,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "globalAddresses"
@@ -3717,6 +3987,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -3829,6 +4109,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "globalAddresses"
@@ -3889,6 +4179,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -4010,6 +4310,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -4161,6 +4471,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "backendBuckets"
@@ -4219,6 +4539,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -4331,6 +4661,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "backendBuckets"
@@ -4404,6 +4744,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "backendBuckets"
@@ -4464,6 +4814,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -4537,6 +4897,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -4647,6 +5017,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -4770,6 +5150,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -4889,6 +5279,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -5040,6 +5440,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "backendServices"
@@ -5098,6 +5508,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -5210,6 +5630,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "backendServices"
@@ -5283,6 +5713,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "backendServices"
@@ -5343,6 +5783,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -5416,6 +5866,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -5536,6 +5996,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -5659,6 +6129,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -5778,6 +6258,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -5929,6 +6419,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "firewalls"
@@ -5987,6 +6487,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -6099,6 +6609,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "firewalls"
@@ -6172,6 +6692,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "firewalls"
@@ -6232,6 +6762,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -6305,6 +6845,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -6426,6 +6976,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -6577,6 +7137,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "globalForwardingRules"
@@ -6635,6 +7205,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -6747,6 +7327,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "globalForwardingRules"
@@ -6807,6 +7397,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -6920,6 +7520,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -7041,6 +7651,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -7192,6 +7812,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "healthChecks"
@@ -7250,6 +7880,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -7362,6 +8002,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "healthChecks"
@@ -7435,6 +8085,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "healthChecks"
@@ -7495,6 +8155,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -7568,6 +8238,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -7689,6 +8369,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -7840,6 +8530,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "httpHealthChecks"
@@ -7898,6 +8598,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8010,6 +8720,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "httpHealthChecks"
@@ -8083,6 +8803,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "httpHealthChecks"
@@ -8143,6 +8873,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8216,6 +8956,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8337,6 +9087,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8488,6 +9248,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "httpsHealthChecks"
@@ -8546,6 +9316,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8658,6 +9438,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "httpsHealthChecks"
@@ -8731,6 +9521,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "httpsHealthChecks"
@@ -8791,6 +9591,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8864,6 +9674,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -8985,6 +9805,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -9136,6 +9966,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "images"
@@ -9218,6 +10058,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/devstorage.read_write"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -9330,6 +10180,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -9440,6 +10300,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "images"
@@ -9500,6 +10370,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -9615,6 +10495,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -9726,6 +10616,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -9847,6 +10747,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -9998,6 +10908,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "instanceTemplates"
@@ -10056,6 +10976,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -10168,6 +11098,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "instanceTemplates"
@@ -10228,6 +11168,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -10351,6 +11301,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -10459,6 +11419,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -10610,6 +11580,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "networks"
@@ -10668,6 +11648,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -10780,6 +11770,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "networks"
@@ -10840,6 +11840,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -10955,6 +11965,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -11068,6 +12088,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -11168,6 +12198,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -11289,6 +12329,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -11440,6 +12490,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -11550,6 +12610,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "globalOperations"
@@ -11605,6 +12675,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -11756,6 +12836,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "routes"
@@ -11814,6 +12904,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -11937,6 +13037,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -12047,6 +13157,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "routes"
@@ -12107,6 +13227,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -12258,6 +13388,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -12369,6 +13509,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -12492,6 +13642,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -12602,6 +13762,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "snapshots"
@@ -12662,6 +13832,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -12813,6 +13993,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "sslCertificates"
@@ -12871,6 +14061,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -12994,6 +14194,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -13104,6 +14314,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "sslCertificates"
@@ -13164,6 +14384,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -13315,6 +14545,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetHttpProxies"
@@ -13373,6 +14613,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -13496,6 +14746,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -13606,6 +14866,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetHttpProxies"
@@ -13666,6 +14936,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -13817,6 +15097,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetHttpsProxies"
@@ -13875,6 +15165,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -13998,6 +15298,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -14108,6 +15418,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetHttpsProxies"
@@ -14168,6 +15488,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -14319,6 +15649,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetSslProxies"
@@ -14377,6 +15717,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -14500,6 +15850,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -14610,6 +15970,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetSslProxies"
@@ -14670,6 +16040,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -14785,6 +16165,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -14898,6 +16288,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -15009,6 +16409,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -15160,6 +16570,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetTcpProxies"
@@ -15218,6 +16638,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -15341,6 +16771,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -15451,6 +16891,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetTcpProxies"
@@ -15511,6 +16961,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -15626,6 +17086,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -15737,6 +17207,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -15888,6 +17368,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "urlMaps"
@@ -15946,6 +17436,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -16069,6 +17569,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -16179,6 +17689,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "urlMaps"
@@ -16252,6 +17772,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "urlMaps"
@@ -16312,6 +17842,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -16385,6 +17925,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -16500,6 +18050,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -16613,6 +18173,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -16721,6 +18291,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -16821,6 +18401,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -16919,6 +18509,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -17070,6 +18670,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -17178,6 +18788,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -17342,6 +18962,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "addresses"
@@ -17413,6 +19043,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -17538,6 +19178,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "addresses"
@@ -17611,6 +19261,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -17745,6 +19405,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -17909,6 +19579,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "regionAutoscalers"
@@ -17994,6 +19674,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "regionAutoscalers"
@@ -18065,6 +19755,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -18151,6 +19851,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -18276,6 +19986,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "regionAutoscalers"
@@ -18349,6 +20069,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -18483,6 +20213,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -18647,6 +20387,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "regionBackendServices"
@@ -18718,6 +20468,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -18843,6 +20603,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "regionBackendServices"
@@ -18929,6 +20699,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "regionBackendServices"
@@ -19002,6 +20782,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -19088,6 +20878,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -19223,6 +21023,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -19355,6 +21165,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -19519,6 +21339,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -19640,6 +21470,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -19804,6 +21644,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "regionDisks"
@@ -19887,6 +21737,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -20012,6 +21872,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "regionDisks"
@@ -20085,6 +21955,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -20224,6 +22104,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -20350,6 +22240,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -20474,6 +22374,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -20608,6 +22518,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -20772,6 +22692,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "forwardingRules"
@@ -20843,6 +22773,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -20968,6 +22908,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "forwardingRules"
@@ -21041,6 +22991,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -21167,6 +23127,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -21301,6 +23271,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -21465,6 +23445,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "regionInstanceGroupManagers"
@@ -21536,6 +23526,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -21661,6 +23661,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "regionInstanceGroupManagers"
@@ -21747,6 +23757,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "regionInstanceGroupManagers"
@@ -21820,6 +23840,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -21906,6 +23936,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -22034,6 +24074,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -22158,6 +24208,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -22331,6 +24391,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -22455,6 +24525,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -22585,6 +24665,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -22709,6 +24799,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -22837,6 +24937,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -22961,6 +25071,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -23095,6 +25215,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -23259,6 +25389,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -23380,6 +25520,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -23568,6 +25718,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -23692,6 +25852,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -23826,6 +25996,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -23990,6 +26170,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -24113,6 +26303,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "regionOperations"
@@ -24181,6 +26381,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -24345,6 +26555,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "routers"
@@ -24416,6 +26636,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -24552,6 +26782,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -24675,6 +26915,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "routers"
@@ -24761,6 +27011,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "routers"
@@ -24834,6 +27094,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -24920,6 +27190,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -25043,6 +27323,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -25177,6 +27467,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -25341,6 +27641,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "subnetworks"
@@ -25412,6 +27722,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -25535,6 +27855,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -25671,6 +28001,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -25805,6 +28145,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -25928,6 +28278,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "subnetworks"
@@ -26001,6 +28361,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -26129,6 +28499,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -26253,6 +28633,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -26417,6 +28807,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetPools"
@@ -26488,6 +28888,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -26624,6 +29034,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -26747,6 +29167,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetPools"
@@ -26820,6 +29250,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -26948,6 +29388,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -27072,6 +29522,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -27208,6 +29668,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -27334,6 +29804,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -27458,6 +29938,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -27596,6 +30086,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -27760,6 +30260,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetVpnGateways"
@@ -27831,6 +30341,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -27967,6 +30487,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -28090,6 +30620,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetVpnGateways"
@@ -28163,6 +30703,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -28327,6 +30877,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "vpnTunnels"
@@ -28398,6 +30958,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -28534,6 +31104,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -28657,6 +31237,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "vpnTunnels"
@@ -28730,6 +31320,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -28832,6 +31432,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -28930,6 +31540,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -29056,6 +31676,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -29167,6 +31797,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -29282,6 +31922,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -29393,6 +32043,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -29544,6 +32204,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -29652,6 +32322,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -29816,6 +32496,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "autoscalers"
@@ -29901,6 +32591,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "autoscalers"
@@ -29972,6 +32672,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -30058,6 +32768,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -30183,6 +32903,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "autoscalers"
@@ -30256,6 +32986,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -30390,6 +33130,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -30554,6 +33304,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "commitments"
@@ -30625,6 +33385,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -30750,6 +33520,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -30871,6 +33651,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -31007,6 +33797,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -31139,6 +33939,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -31303,6 +34113,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -31424,6 +34244,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -31588,6 +34418,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "disks"
@@ -31671,6 +34511,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -31796,6 +34646,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "disks"
@@ -31869,6 +34729,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -32008,6 +34878,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -32134,6 +35014,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -32258,6 +35148,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -32392,6 +35292,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -32556,6 +35466,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "hosts"
@@ -32627,6 +35547,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -32752,6 +35682,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "hosts"
@@ -32825,6 +35765,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -32948,6 +35898,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -33084,6 +36044,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -33216,6 +36186,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -33380,6 +36360,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "instanceGroupManagers"
@@ -33451,6 +36441,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -33576,6 +36576,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       put: <
         tags: "instanceGroupManagers"
@@ -33662,6 +36672,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "instanceGroupManagers"
@@ -33735,6 +36755,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -33821,6 +36851,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -33949,6 +36989,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -34073,6 +37123,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -34246,6 +37306,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -34370,6 +37440,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -34500,6 +37580,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -34624,6 +37714,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -34752,6 +37852,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -34878,6 +37988,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -35002,6 +38122,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -35136,6 +38266,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -35300,6 +38440,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "instanceGroups"
@@ -35371,6 +38521,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -35496,6 +38656,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "instanceGroups"
@@ -35569,6 +38739,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -35695,6 +38875,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -35883,6 +39073,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -36009,6 +39209,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -36133,6 +39343,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -36267,6 +39487,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -36431,6 +39661,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "instances"
@@ -36502,6 +39742,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -36627,6 +39877,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "instances"
@@ -36700,6 +39960,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -36841,6 +40111,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -36977,6 +40257,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -37120,6 +40410,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -37248,6 +40548,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -37361,6 +40671,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -37515,6 +40835,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -37656,6 +40986,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -37780,6 +41120,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -37908,6 +41258,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -38032,6 +41392,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -38160,6 +41530,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -38284,6 +41664,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -38412,6 +41802,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -38525,6 +41925,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -38651,6 +42061,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -38780,6 +42200,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -38905,6 +42335,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -39046,6 +42486,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -39167,6 +42617,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -39303,6 +42763,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -39435,6 +42905,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -39599,6 +43079,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -39720,6 +43210,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute.readonly"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -39884,6 +43384,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -40007,6 +43517,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "zoneOperations"
@@ -40075,6 +43595,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -40239,6 +43769,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       post: <
         tags: "targetInstances"
@@ -40310,6 +43850,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -40446,6 +43996,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       parameters: <
         json_reference: <
@@ -40569,6 +44129,16 @@ paths: <
             >
           >
         >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
+          >
+        >
       >
       delete: <
         tags: "targetInstances"
@@ -40642,6 +44212,16 @@ paths: <
             value: <
               value: "https://www.googleapis.com/auth/compute"
             >
+          >
+        >
+        vendor_extension: <
+          name: "x-foo"
+          value: <
+            value: <
+              type_url: "type.googleapis.com/foo.Book"
+              value: "\n\002t1\022\002t1"
+            >
+            yaml: "t1: t1\nt2: t1\n"
           >
         >
       >
@@ -40792,7 +44372,11 @@ definitions: <
       vendor_extension: <
         name: "x-foo"
         value: <
-          yaml: "1\n"
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -40958,7 +44542,11 @@ definitions: <
       vendor_extension: <
         name: "x-foo"
         value: <
-          yaml: "1\n"
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -41092,7 +44680,11 @@ definitions: <
       vendor_extension: <
         name: "x-foo"
         value: <
-          yaml: "1\n"
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -41229,12 +44821,6 @@ definitions: <
                 >
               >
             >
-            vendor_extension: <
-              name: "x-foo"
-              value: <
-                yaml: "1\n"
-              >
-            >
           >
         >
       >
@@ -41265,6 +44851,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -41421,6 +45017,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -41541,6 +45147,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -41587,6 +45203,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -41728,6 +45354,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -41854,6 +45490,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -42136,6 +45782,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42155,6 +45811,16 @@ definitions: <
               value: "number"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -42205,6 +45871,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42224,6 +45900,16 @@ definitions: <
               value: "number"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -42264,6 +45950,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42291,6 +45987,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -42409,6 +46115,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42497,6 +46213,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42561,6 +46287,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42586,6 +46322,16 @@ definitions: <
               >
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -42865,6 +46611,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42930,6 +46686,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -42946,6 +46712,16 @@ definitions: <
             _ref: "#/definitions/CacheKeyPolicy"
             description: "The CacheKeyPolicy for this CdnPolicy."
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -43026,6 +46802,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -43088,6 +46874,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -43263,6 +47059,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -43358,6 +47164,16 @@ definitions: <
               >
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -43519,6 +47335,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -43645,6 +47471,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -43901,6 +47737,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -43920,6 +47766,16 @@ definitions: <
               value: "integer"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -43958,6 +47814,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -44049,6 +47915,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -44352,6 +48228,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -44478,6 +48364,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -44613,6 +48509,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -44739,6 +48645,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -45289,6 +49205,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -45353,6 +49279,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -45392,6 +49328,16 @@ definitions: <
               value: "integer"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -45648,6 +49594,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -45774,6 +49730,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -45979,6 +49945,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -46370,6 +50346,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -46432,6 +50418,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -46769,6 +50765,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -46812,6 +50818,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -47089,6 +51105,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -47151,6 +51177,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -47291,6 +51327,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -47353,6 +51399,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -47624,6 +51680,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -47686,6 +51752,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -47938,6 +52014,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -48271,6 +52357,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -48508,6 +52604,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -48772,6 +52878,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -49638,6 +53754,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -49782,6 +53908,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -49887,6 +54023,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -49949,6 +54095,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -50345,6 +54501,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -50361,6 +54527,16 @@ definitions: <
             _ref: "#/definitions/LogConfigCounterOptions"
             description: "Counter options."
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -50390,6 +54566,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -50527,6 +54713,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -50653,6 +54849,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -51063,6 +55269,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -51091,6 +55307,16 @@ definitions: <
               value: "integer"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -51252,6 +55478,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -51327,6 +55563,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -51391,6 +55637,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -51451,6 +55707,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -51901,6 +56167,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -52027,6 +56303,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -52218,6 +56504,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -52252,6 +56548,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -52470,6 +56776,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -52731,6 +57047,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -52852,6 +57178,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -52914,6 +57250,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -53063,6 +57409,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -53125,6 +57481,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -53503,6 +57869,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -53579,6 +57955,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -53952,6 +58338,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -54075,6 +58471,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -54138,6 +58544,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -54327,6 +58743,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -54795,6 +59221,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -54901,6 +59337,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -54962,6 +59408,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -54996,6 +59452,16 @@ definitions: <
               >
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -55201,6 +59667,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -55263,6 +59739,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -55353,6 +59839,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -55415,6 +59911,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -55546,6 +60052,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -55674,6 +60190,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -55701,6 +60227,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -55976,6 +60512,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -56055,6 +60601,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -56117,6 +60673,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -56249,6 +60815,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -56311,6 +60887,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -56411,6 +60997,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -56539,6 +61135,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -56832,6 +61438,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -56993,6 +61609,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -57435,6 +62061,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -57497,6 +62133,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -57637,6 +62283,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -57699,6 +62355,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -57842,6 +62508,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -57968,6 +62644,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -58379,6 +63065,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -58441,6 +63137,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -58508,6 +63214,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -58563,6 +63279,16 @@ definitions: <
               value: "boolean"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -58625,6 +63351,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >
@@ -59000,6 +63736,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -59235,6 +63981,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -59335,6 +64091,16 @@ definitions: <
           >
         >
       >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
+        >
+      >
     >
   >
   additional_properties: <
@@ -59397,6 +64163,16 @@ definitions: <
               value: "string"
             >
           >
+        >
+      >
+      vendor_extension: <
+        name: "x-foo"
+        value: <
+          value: <
+            type_url: "type.googleapis.com/foo.Book"
+            value: "\n\002t1\022\002t1"
+          >
+          yaml: "t1: t1\nt2: t1\n"
         >
       >
     >

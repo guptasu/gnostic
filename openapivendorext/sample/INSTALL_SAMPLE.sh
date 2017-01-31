@@ -63,4 +63,19 @@ pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext
         go install
     popd
 
+    # For testing large compute api sample. Testing for time performance
+    #
+    #
+    FOO_EXTENSION_SCHEMA="sample/x-foo.json"
+
+    openapivendorextc $FOO_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR
+
+    pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_foo/proto
+        protoc --go_out=Mgoogle/protobuf/any.proto=github.com/golang/protobuf/ptypes/any:. *.proto
+        go install
+    popd
+
+    pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_foo
+        go install
+    popd
 popd

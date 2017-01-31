@@ -21,10 +21,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"regexp"
+	"time"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/googleapis/openapi-compiler/OpenAPIv2"
@@ -202,13 +204,17 @@ Options:
 		fmt.Printf("Error: %+v\n", err)
 		os.Exit(-1)
 	}
+	start := time.Now()
 	document, err := openapi_v2.NewDocument(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, &customAnyProtoGenerator))
 	if err != nil {
 		writeFile(errorPath, []byte(err.Error()), sourceName, "errors")
 		os.Exit(-1)
 	}
+	elapsed := time.Since(start)
+	log.Printf("OpenAPI Document model creating took %s\n", elapsed)
 
 	// optionally resolve internal references
+	start = time.Now()
 	if resolveReferences {
 		_, err = document.ResolveReferences(sourceName)
 		if err != nil {
@@ -216,6 +222,8 @@ Options:
 			os.Exit(-1)
 		}
 	}
+	elapsed = time.Since(start)
+	log.Printf("Resolving reference took %s\n", elapsed)
 
 	// perform all specified actions
 	if binaryProtoPath != "" {
@@ -233,7 +241,10 @@ Options:
 		bytes := []byte(proto.MarshalTextString(document))
 		writeFile(textProtoPath, bytes, sourceName, "text")
 	}
+	start = time.Now()
 	for _, pluginCall := range pluginCalls {
 		pluginCall.perform(document, sourceName)
 	}
+	elapsed = time.Since(start)
+	log.Printf("Plugins took %s\n", elapsed)
 }
