@@ -30,45 +30,44 @@ go install
 #
 pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext
 
+    EXTENSION_OUT_DIR="github.com/googleapis/openapi-compiler/openapivendorext/sample/generated"
     # For Google Extension Example
     #
     #
-    GOOGLE_EXTENSION_SCHEMA="sample/x-google-extensions.json"
-    GOOGLE_EXTENSION_OUT_DIR="github.com/googleapis/openapi-compiler/openapivendorext/sample/generated/sample_x_google_extension_plugin"
+    GOOGLE_EXTENSION_SCHEMA="sample/x-google.json"
     GOOGLE_EXTENSION_PROTO_NAMESPACE="GoogleExtensions"
 
-    openapivendorextc $GOOGLE_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$GOOGLE_EXTENSION_OUT_DIR \
+    openapivendorextc $GOOGLE_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR \
     --proto_option_suffix=$GOOGLE_EXTENSION_PROTO_NAMESPACE \
     --extension_name_to_message=x-book:Book \
     --extension_name_to_message=x-shelve:Shelve \
 
-    pushd $GOPATH/src/$GOOGLE_EXTENSION_OUT_DIR/proto
+    pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_google/proto
         protoc --go_out=Mgoogle/protobuf/any.proto=github.com/golang/protobuf/ptypes/any:. *.proto
         go install
     popd
 
-    pushd  $GOPATH/src/$GOOGLE_EXTENSION_OUT_DIR
+    pushd  $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_google
         go install
     popd
 
     # For IBM Extension Example
     #
     #
-    IBM_EXTENSION_SCHEMA="sample/x-ibm-extensions.json"
-    IBM_EXTENSION_OUT_DIR="github.com/googleapis/openapi-compiler/openapivendorext/sample/generated/sample_x_ibm_extension_plugin"
+    IBM_EXTENSION_SCHEMA="sample/x-ibm.json"
     IBM_EXTENSION_PROTO_NAMESPACE="IbmExtensions"
 
-    openapivendorextc $IBM_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$IBM_EXTENSION_OUT_DIR \
+    openapivendorextc $IBM_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR \
     --proto_option_suffix=$IBM_EXTENSION_PROTO_NAMESPACE \
     --extension_name_to_message=x-ibm-book:IbmBook \
     --extension_name_to_message=x-ibm-shelve:IbmShelve \
 
-    pushd $GOPATH/src/$IBM_EXTENSION_OUT_DIR/proto
+    pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_ibm/proto
         protoc --go_out=Mgoogle/protobuf/any.proto=github.com/golang/protobuf/ptypes/any:. *.proto
         go install
     popd
 
-    pushd $GOPATH/src/$IBM_EXTENSION_OUT_DIR
+    pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_ibm
         go install
     popd
 

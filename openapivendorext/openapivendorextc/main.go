@@ -153,6 +153,11 @@ func GenerateMainFile(packageName string, license string, codeBody string, impor
 	return code.String()
 }
 
+func getBaseFileNameWithoutExt(filePath string) string {
+	tmp := filepath.Base(filePath)
+	return tmp[0 : len(tmp)-len(filepath.Ext(tmp))]
+}
+
 func main() {
 	// the OpenAPI schema file and API version are hard-coded for now
 
@@ -218,9 +223,13 @@ Usage: TODO
 		fmt.Printf("Missing output directive.\n%s\n", usage)
 		os.Exit(-1)
 	}
+	if !strings.HasPrefix(getBaseFileNameWithoutExt(schameFile), "x-") {
+		fmt.Printf("Schema file name has to start with 'x-'.\n%s\n", usage)
+		os.Exit(-1)
+	}
 
-	outFileBaseName := filepath.Base(schameFile)
-	outFileBaseName = outFileBaseName[0 : len(outFileBaseName)-len(filepath.Ext(outFileBaseName))]
+	outFileBaseName := getBaseFileNameWithoutExt(schameFile)
+	outDirRelativeToGoPathSrc = path.Join(outDirRelativeToGoPathSrc, "openapi_extensions_"+outFileBaseName[len("x-"):])
 
 	protoPackageName := strings.ToLower(protoOptionSuffix)
 	goPackageName := protoPackageName
