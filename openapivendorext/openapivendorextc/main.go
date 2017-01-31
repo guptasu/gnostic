@@ -186,7 +186,6 @@ Usage: TODO
 	goPathWithSrcDir := path.Join(os.Getenv("GOPATH"), "src")
 	schameFile := ""
 	pluginRegex, _ := regexp.Compile("--(.+)=(.+)")
-	pluginExtensionToMessageRegex, _ := regexp.Compile("(.+):(.+)")
 
 	extensionToMessage := make(map[string]string)
 
@@ -201,14 +200,6 @@ Usage: TODO
 			switch flagName {
 			case "out_dir_relative_to_gopath_src":
 				outDirRelativeToGoPathSrc = flagValue
-			case "extension_name_to_message":
-				var t [][]byte
-				if t = pluginExtensionToMessageRegex.FindSubmatch([]byte(flagValue)); t != nil {
-					extensionToMessage[string(t[1])] = string(t[2])
-				} else {
-					fmt.Printf("Unknown option: %s.\n%s\n", arg, usage)
-					os.Exit(-1)
-				}
 			default:
 				fmt.Printf("Unknown option: %s.\n%s\n", arg, usage)
 				os.Exit(-1)
@@ -219,11 +210,6 @@ Usage: TODO
 		} else {
 			schameFile = arg
 		}
-	}
-
-	if len(extensionToMessage) == 0 {
-		fmt.Printf("No extension_name_to_message specified.\n%s\n", usage)
-		os.Exit(-1)
 	}
 
 	if schameFile == "" {
@@ -249,12 +235,6 @@ Usage: TODO
 	protoOutDirectory := outDir + "/" + "proto"
 	var err error
 
-	var cases string
-	for extensionName, messagType := range extensionToMessage {
-		cases += fmt.Sprintf(caseString, extensionName, goPackageName, messagType)
-	}
-	mainExtPluginCode := fmt.Sprintf(additionalCompilerCodeWithMain, cases)
-
 	baseSchema := jsonschema.NewSchemaFromFile("schema.json")
 	baseSchema.ResolveRefs()
 	baseSchema.ResolveAllOfs()
@@ -265,17 +245,34 @@ Usage: TODO
 
 	// build a simplified model of the types described by the schema
 	cc := util.NewDomain(openapiSchema)
+
 	// create a type for each object defined in the schema
+	hasErrors := false
 	if cc.Schema.Definitions != nil {
 		for _, pair := range *(cc.Schema.Definitions) {
 			definitionName := pair.Name
 			definitionSchema := pair.Value
+			// ensure the id field is set
+			if definitionSchema.Id == nil || len(*(definitionSchema.Id)) == 0 {
+				fmt.Printf("Schema for %s does not contain the required 'id' field. Value of the 'id' field should be the name of the OpenAPI extension that the schema represents\n", definitionName)
+				hasErrors = true
+			} else {
+				if _, ok := extensionToMessage[*(definitionSchema.Id)]; ok {
+					fmt.Printf("Schema %s and %s has the same 'id' field value\n", definitionName, extensionToMessage[*(definitionSchema.Id)])
+					hasErrors = true
+				}
+				extensionToMessage[*(definitionSchema.Id)] = definitionName
+			}
 			typeName := cc.TypeNameForStub(definitionName)
 			typeModel := cc.BuildTypeForDefinition(typeName, definitionName, definitionSchema)
 			if typeModel != nil {
 				cc.TypeModels[typeName] = typeModel
 			}
 		}
+	}
+	if hasErrors {
+		// error has been reported.
+		os.Exit(-1)
 	}
 
 	err = os.MkdirAll(outDir, os.ModePerm)
@@ -333,6 +330,12 @@ Usage: TODO
 		"github.com/googleapis/openapi-compiler/compiler",
 		outDirRelativeToGoPathSrc + "/" + "proto",
 	}
+	var cases string
+	for extensionName, messagType := range extensionToMessage {
+		cases += fmt.Sprintf(caseString, extensionName, goPackageName, messagType)
+	}
+	mainExtPluginCode := fmt.Sprintf(additionalCompilerCodeWithMain, cases)
+
 	main := GenerateMainFile("main", LICENSE, mainExtPluginCode, imports)
 	mainFileName := path.Join(outDir, "main.go")
 	err = ioutil.WriteFile(mainFileName, []byte(main), 0644)

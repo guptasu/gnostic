@@ -64,10 +64,10 @@ func main() {
 			switch extensionName {
 			// All supported extensions
 
-			case "x-book":
+			case "x-google-book":
 				newObject, err = google.NewBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 
-			case "x-shelve":
+			case "x-google-shelve":
 				newObject, err = google.NewShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 
 			default:

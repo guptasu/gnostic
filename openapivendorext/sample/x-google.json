@@ -2,6 +2,7 @@
             "definitions": {
                 "Book": {
                     "type": "object",
+                    "id": "x-google-book",
                     "required": [
                         "code",
                         "message"
@@ -18,6 +19,7 @@
                 },
                 "Shelve": {
                     "type": "object",
+                    "id": "x-google-shelve",
                     "required": [
                         "foo1",
                         "bar"

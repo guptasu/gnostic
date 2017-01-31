@@ -36,9 +36,7 @@ pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext
     #
     GOOGLE_EXTENSION_SCHEMA="sample/x-google.json"
 
-    openapivendorextc $GOOGLE_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR \
-    --extension_name_to_message=x-book:Book \
-    --extension_name_to_message=x-shelve:Shelve \
+    openapivendorextc $GOOGLE_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR
 
     pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_google/proto
         protoc --go_out=Mgoogle/protobuf/any.proto=github.com/golang/protobuf/ptypes/any:. *.proto
@@ -54,9 +52,7 @@ pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext
     #
     IBM_EXTENSION_SCHEMA="sample/x-ibm.json"
 
-    openapivendorextc $IBM_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR \
-    --extension_name_to_message=x-ibm-book:IbmBook \
-    --extension_name_to_message=x-ibm-shelve:IbmShelve \
+    openapivendorextc $IBM_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR
 
     pushd $GOPATH/src/$EXTENSION_OUT_DIR/openapi_extensions_ibm/proto
         protoc --go_out=Mgoogle/protobuf/any.proto=github.com/golang/protobuf/ptypes/any:. *.proto
