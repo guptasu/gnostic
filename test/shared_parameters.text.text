@@ -129,20 +129,20 @@ parameters: <
   >
 >
 vendor_extension: <
-  name: "x-book"
+  name: "x-google-book"
   value: <
     value: <
-      type_url: "type.googleapis.com/googleextensions.Book"
+      type_url: "type.googleapis.com/google.Book"
       value: "\010{\020\347\007"
     >
     yaml: "code: 123\nmessage: 999\n"
   >
 >
 vendor_extension: <
-  name: "x-shelve"
+  name: "x-google-shelve"
   value: <
     value: <
-      type_url: "type.googleapis.com/googleextensions.Shelve"
+      type_url: "type.googleapis.com/google.Shelve"
       value: "\010{\020\347\007"
     >
     yaml: "foo1: 123\nbar: 999\n"
@@ -152,7 +152,7 @@ vendor_extension: <
   name: "x-ibm-book"
   value: <
     value: <
-      type_url: "type.googleapis.com/ibmextensions.IbmBook"
+      type_url: "type.googleapis.com/ibm.IbmBook"
       value: "\010{\020\347\007"
     >
     yaml: "code: 123\nmessage: 999\n"
@@ -162,7 +162,7 @@ vendor_extension: <
   name: "x-ibm-shelve"
   value: <
     value: <
-      type_url: "type.googleapis.com/ibmextensions.IbmShelve"
+      type_url: "type.googleapis.com/ibm.IbmShelve"
       value: "\010{\020\347\007"
     >
     yaml: "foo1: 123\nbar: 999\n"

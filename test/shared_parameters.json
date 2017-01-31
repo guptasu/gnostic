@@ -7,8 +7,8 @@
     },
     "host": "library-example.googleapis.com",
     
-    "x-book" : {"code": 123, "message": 999},
-    "x-shelve" : {"foo1": 123, "bar": 999},
+    "x-google-book" : {"code": 123, "message": 999},
+    "x-google-shelve" : {"foo1": 123, "bar": 999},
     
     "x-ibm-book" : {"code": 123, "message": 999},
     "x-ibm-shelve" : {"foo1": 123, "bar": 999},

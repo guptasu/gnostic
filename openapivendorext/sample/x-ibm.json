@@ -2,6 +2,7 @@
             "definitions": {
                 "IbmBook": {
                     "type": "object",
+                    "id": "x-ibm-book",
                     "required": [
                         "code",
                         "message"
@@ -18,6 +19,7 @@
                 },
                 "IbmShelve": {
                     "type": "object",
+                    "id": "x-ibm-shelve",
                     "required": [
                         "foo1",
                         "bar"

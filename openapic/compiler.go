@@ -126,7 +126,7 @@ Options:
   --errors_out=PATH   Write compilation errors to the specified location.
   --PLUGIN_out=PATH   Run the plugin named openapi_PLUGIN and write results to the specified location.
   --resolve_refs      Explicitly resolve $ref references (this could have problems with recursive definitions).
-  --custom_any_proto_gen=FIELD_NAME:GENERATOR_NAME  Custom impementation of generating google.protobuf.Any types for specific file FIELD_NAME.
+  --extension=GENERATOR_NAME  TODO.
 `
 	// default values for all options
 	sourceName := ""
@@ -141,9 +141,9 @@ Options:
 	// arg processing matches patterns of the form "--PLUGIN_out=PATH"
 	plugin_regex, err := regexp.Compile("--(.+)_out=(.+)")
 
-	// arg processing matches patterns of the form "--custom_any_proto_gen=INSTALLED_TOOL_TO_GENERATE_ANY_TYPE_FOR_FIELNAME"
-	customAnyProtoGenerator_regex, err := regexp.Compile("--custom_any_proto_gen=(.+)")
-
+	// arg processing matches patterns of the form "--extension=GENERATOR_NAME"
+	customAnyProtoGenerator_regex, err := regexp.Compile("--extension=(.+)")
+	defaultPrefixForExtensions := "openapi_extensions_"
 	for i, arg := range os.Args {
 		if i == 0 {
 			continue // skip the tool name
@@ -166,7 +166,7 @@ Options:
 				pluginCalls = append(pluginCalls, pluginCall)
 			}
 		} else if m = customAnyProtoGenerator_regex.FindSubmatch([]byte(arg)); m != nil {
-			customAnyProtoGenerator = append(customAnyProtoGenerator, compiler.CustomAnyProtoGenerator{GeneratorName: string(m[1])})
+			customAnyProtoGenerator = append(customAnyProtoGenerator, compiler.CustomAnyProtoGenerator{GeneratorName: defaultPrefixForExtensions + string(m[1])})
 		} else if arg == "--resolve_refs" {
 			resolveReferences = true
 		} else if arg[0] == '-' {

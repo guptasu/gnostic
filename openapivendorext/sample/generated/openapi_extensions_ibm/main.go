@@ -22,7 +22,7 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/googleapis/openapi-compiler/compiler"
 	"github.com/googleapis/openapi-compiler/openapivendorext/plugin"
-	"github.com/googleapis/openapi-compiler/openapivendorext/sample/generated/sample_x_ibm_extension_plugin/proto"
+	"github.com/googleapis/openapi-compiler/openapivendorext/sample/generated/openapi_extensions_ibm/proto"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"
@@ -65,10 +65,10 @@ func main() {
 			// All supported extensions
 
 			case "x-ibm-book":
-				newObject, err = ibmextensions.NewIbmBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+				newObject, err = ibm.NewIbmBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 
 			case "x-ibm-shelve":
-				newObject, err = ibmextensions.NewIbmShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+				newObject, err = ibm.NewIbmShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 
 			default:
 				responseBytes, _ := proto.Marshal(response)
