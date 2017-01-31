@@ -105,7 +105,7 @@ func main() {
 	var err error
 
 	// generate the protocol buffer description
-	proto := cc.GenerateProto(proto_packagename, LICENSE, PROTO_OPTIONS)
+	proto := cc.GenerateProto(proto_packagename, LICENSE, PROTO_OPTIONS, []string{"google/protobuf/any.proto"})
 	proto_filename := filename + "/" + filename + ".proto"
 	err = ioutil.WriteFile(proto_filename, []byte(proto), 0644)
 	if err != nil {
@@ -113,7 +113,13 @@ func main() {
 	}
 
 	// generate the compiler
-	compiler := cc.GenerateCompiler(go_packagename, LICENSE)
+	compiler := cc.GenerateCompiler(go_packagename, LICENSE, []string{
+		"fmt",
+		"gopkg.in/yaml.v2",
+		"strings",
+		"github.com/googleapis/openapi-compiler/compiler",
+	})
+
 	go_filename := filename + "/" + filename + ".go"
 	err = ioutil.WriteFile(go_filename, []byte(compiler), 0644)
 	if err != nil {

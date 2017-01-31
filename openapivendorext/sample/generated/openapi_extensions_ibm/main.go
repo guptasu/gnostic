@@ -64,11 +64,11 @@ func main() {
 			switch extensionName {
 			// All supported extensions
 
-			case "x-ibm-shelve":
-				newObject, err = ibmextensions.NewIbmShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
-
 			case "x-ibm-book":
-				newObject, err = ibmextensions.NewIbmBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+				newObject, err = ibm.NewIbmBook(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
+
+			case "x-ibm-shelve":
+				newObject, err = ibm.NewIbmShelve(info, compiler.NewContextWithCustomAnyProtoGenerators("$root", nil, nil))
 
 			default:
 				responseBytes, _ := proto.Marshal(response)

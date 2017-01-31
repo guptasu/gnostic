@@ -158,6 +158,24 @@ func getBaseFileNameWithoutExt(filePath string) string {
 	return tmp[0 : len(tmp)-len(filepath.Ext(tmp))]
 }
 
+func toProtoPackageName(input string) string {
+	var out = ""
+	nonAlphaNumeric := regexp.MustCompile("[^0-9A-Za-z_]+")
+	input = nonAlphaNumeric.ReplaceAllString(input, "")
+	for index, character := range input {
+		if character >= 'A' && character <= 'Z' {
+			if index > 0 && input[index-1] != '_' {
+				out += "_"
+			}
+			out += string(character - 'A' + 'a')
+		} else {
+			out += string(character)
+		}
+
+	}
+	return out
+}
+
 func main() {
 	// the OpenAPI schema file and API version are hard-coded for now
 
@@ -167,7 +185,6 @@ Usage: TODO
 	outDirRelativeToGoPathSrc := ""
 	goPathWithSrcDir := path.Join(os.Getenv("GOPATH"), "src")
 	schameFile := ""
-	protoOptionSuffix := ""
 	pluginRegex, _ := regexp.Compile("--(.+)=(.+)")
 	pluginExtensionToMessageRegex, _ := regexp.Compile("(.+):(.+)")
 
@@ -184,8 +201,6 @@ Usage: TODO
 			switch flagName {
 			case "out_dir_relative_to_gopath_src":
 				outDirRelativeToGoPathSrc = flagValue
-			case "proto_option_suffix":
-				protoOptionSuffix = flagValue
 			case "extension_name_to_message":
 				var t [][]byte
 				if t = pluginExtensionToMessageRegex.FindSubmatch([]byte(flagValue)); t != nil {
@@ -215,10 +230,6 @@ Usage: TODO
 		fmt.Printf("No input json schema specified.\n%s\n", usage)
 		os.Exit(-1)
 	}
-	if protoOptionSuffix == "" {
-		fmt.Printf("No proto_option_suffix specified.\n%s\n", usage)
-		os.Exit(-1)
-	}
 	if outDirRelativeToGoPathSrc == "" {
 		fmt.Printf("Missing output directive.\n%s\n", usage)
 		os.Exit(-1)
@@ -229,9 +240,10 @@ Usage: TODO
 	}
 
 	outFileBaseName := getBaseFileNameWithoutExt(schameFile)
-	outDirRelativeToGoPathSrc = path.Join(outDirRelativeToGoPathSrc, "openapi_extensions_"+outFileBaseName[len("x-"):])
-
-	protoPackageName := strings.ToLower(protoOptionSuffix)
+	extensionNameWithoutXDashPrefix := outFileBaseName[len("x-"):]
+	outDirRelativeToGoPathSrc = path.Join(outDirRelativeToGoPathSrc, "openapi_extensions_"+extensionNameWithoutXDashPrefix)
+	protoPackage := toProtoPackageName(extensionNameWithoutXDashPrefix)
+	protoPackageName := strings.ToLower(protoPackage)
 	goPackageName := protoPackageName
 	outDir := path.Join(goPathWithSrcDir, outDirRelativeToGoPathSrc)
 	protoOutDirectory := outDir + "/" + "proto"
@@ -253,7 +265,18 @@ Usage: TODO
 
 	// build a simplified model of the types described by the schema
 	cc := util.NewDomain(openapiSchema)
-	cc.Build()
+	// create a type for each object defined in the schema
+	if cc.Schema.Definitions != nil {
+		for _, pair := range *(cc.Schema.Definitions) {
+			definitionName := pair.Name
+			definitionSchema := pair.Value
+			typeName := cc.TypeNameForStub(definitionName)
+			typeModel := cc.BuildTypeForDefinition(typeName, definitionName, definitionSchema)
+			if typeModel != nil {
+				cc.TypeModels[typeName] = typeModel
+			}
+		}
+	}
 
 	err = os.MkdirAll(outDir, os.ModePerm)
 	if err != nil {
@@ -268,8 +291,8 @@ Usage: TODO
 	// generate the protocol buffer description
 
 	PROTO_OPTIONS = append(PROTO_OPTIONS,
-		util.ProtoOption{Name: "java_package", Value: "org.openapi.extension." + strings.ToLower(protoOptionSuffix), Comment: "// The Java package name must be proto package name with proper prefix."},
-		util.ProtoOption{Name: "objc_class_prefix", Value: strings.ToLower(protoOptionSuffix),
+		util.ProtoOption{Name: "java_package", Value: "org.openapi.extension." + strings.ToLower(protoPackage), Comment: "// The Java package name must be proto package name with proper prefix."},
+		util.ProtoOption{Name: "objc_class_prefix", Value: strings.ToLower(protoPackage),
 			Comment: "// A reasonable prefix for the Objective-C symbols generated from the package.\n" +
 				"// It should at a minimum be 3 characters long, all uppercase, and convention\n" +
 				"// is to use an abbreviation of the package name. Something short, but\n" +
@@ -277,7 +300,7 @@ Usage: TODO
 				"// the future. 'GPB' is reserved for the protocol buffer implementation itself.",
 		})
 
-	proto := cc.GenerateProto(protoPackageName, LICENSE, PROTO_OPTIONS)
+	proto := cc.GenerateProto(protoPackageName, LICENSE, PROTO_OPTIONS, nil)
 	protoFilename := path.Join(protoOutDirectory, outFileBaseName+".proto")
 
 	err = ioutil.WriteFile(protoFilename, []byte(proto), 0644)
@@ -286,7 +309,11 @@ Usage: TODO
 	}
 
 	// generate the compiler
-	compiler := cc.GenerateCompiler(goPackageName, LICENSE)
+	compiler := cc.GenerateCompiler(goPackageName, LICENSE, []string{
+		"fmt",
+		"strings",
+		"github.com/googleapis/openapi-compiler/compiler",
+	})
 	goFilename := path.Join(protoOutDirectory, outFileBaseName+".go")
 	err = ioutil.WriteFile(goFilename, []byte(compiler), 0644)
 	if err != nil {
@@ -298,11 +325,11 @@ Usage: TODO
 	imports := []string{
 		"io/ioutil",
 		"os",
+		"gopkg.in/yaml.v2",
 		"github.com/golang/protobuf/proto",
 		"github.com/googleapis/openapi-compiler/openapivendorext/plugin",
 		"github.com/golang/protobuf/ptypes",
 		"fmt",
-		"gopkg.in/yaml.v2",
 		"github.com/googleapis/openapi-compiler/compiler",
 		outDirRelativeToGoPathSrc + "/" + "proto",
 	}

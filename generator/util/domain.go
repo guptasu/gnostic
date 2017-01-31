@@ -44,7 +44,7 @@ func NewDomain(schema *jsonschema.Schema) *Domain {
 }
 
 // Returns a capitalized name to use for a generated type
-func (domain *Domain) typeNameForStub(stub string) string {
+func (domain *Domain) TypeNameForStub(stub string) string {
 	return domain.Prefix + strings.ToUpper(stub[0:1]) + stub[1:len(stub)]
 }
 
@@ -54,7 +54,7 @@ func (domain *Domain) typeNameForReference(reference string) string {
 	first := parts[0]
 	last := parts[len(parts)-1]
 	if first == "#" {
-		return domain.typeNameForStub(last)
+		return domain.TypeNameForStub(last)
 	} else {
 		return "Schema"
 	}
@@ -109,7 +109,7 @@ func (domain *Domain) arrayItemTypeForSchema(propertyName string, schema *jsonsc
 				itemTypeName = domain.typeNameForReference(*schema.Items.Schema.Ref)
 			} else if schema.Items.Schema.OneOf != nil {
 				// this type is implied by the "oneOf"
-				itemTypeName = domain.typeNameForStub(propertyName + "Item")
+				itemTypeName = domain.TypeNameForStub(propertyName + "Item")
 				domain.ObjectTypeRequests[itemTypeName] =
 					NewTypeRequest(itemTypeName, propertyName, schema.Items.Schema)
 			} else if types == nil {
@@ -169,7 +169,7 @@ func (domain *Domain) buildTypeProperties(typeModel *TypeModel, schema *jsonsche
 					typeModel.addProperty(typeProperty)
 				} else if propertySchema.TypeIs("object") {
 					// the property has an "anonymous" object schema, so define a new type for it and request its creation
-					anonymousObjectTypeName := domain.typeNameForStub(propertyName)
+					anonymousObjectTypeName := domain.TypeNameForStub(propertyName)
 					domain.ObjectTypeRequests[anonymousObjectTypeName] =
 						NewTypeRequest(anonymousObjectTypeName, propertyName, propertySchema)
 					// add a property with the type of the requested type
@@ -196,13 +196,13 @@ func (domain *Domain) buildTypeProperties(typeModel *TypeModel, schema *jsonsche
 				typeProperty := NewTypePropertyWithNameAndType(propertyName, typeName)
 				typeModel.addProperty(typeProperty)
 			} else if propertySchema.OneOf != nil {
-				anonymousObjectTypeName := domain.typeNameForStub(propertyName + "Item")
+				anonymousObjectTypeName := domain.TypeNameForStub(propertyName + "Item")
 				domain.ObjectTypeRequests[anonymousObjectTypeName] =
 					NewTypeRequest(anonymousObjectTypeName, propertyName, propertySchema)
 				typeProperty := NewTypePropertyWithNameAndType(propertyName, anonymousObjectTypeName)
 				typeModel.addProperty(typeProperty)
 			} else if propertySchema.AnyOf != nil {
-				anonymousObjectTypeName := domain.typeNameForStub(propertyName + "Item")
+				anonymousObjectTypeName := domain.TypeNameForStub(propertyName + "Item")
 				domain.ObjectTypeRequests[anonymousObjectTypeName] =
 					NewTypeRequest(anonymousObjectTypeName, propertyName, propertySchema)
 				typeProperty := NewTypePropertyWithNameAndType(propertyName, anonymousObjectTypeName)
@@ -301,7 +301,7 @@ func (domain *Domain) buildAdditionalPropertyAccessors(typeModel *TypeModel, sch
 					}
 				}
 			} else if schema.OneOf != nil {
-				propertyTypeName := domain.typeNameForStub(typeModel.Name + "Item")
+				propertyTypeName := domain.TypeNameForStub(typeModel.Name + "Item")
 				propertyName := "additionalProperties"
 				typeName := fmt.Sprintf("Named%s", propertyTypeName)
 				property := NewTypePropertyWithNameAndType(propertyName, typeName)
@@ -433,7 +433,7 @@ func (domain *Domain) buildDefaultAccessors(typeModel *TypeModel, schema *jsonsc
 	typeModel.addProperty(property)
 }
 
-func (domain *Domain) buildTypeForDefinition(
+func (domain *Domain) BuildTypeForDefinition(
 	typeName string,
 	propertyName string,
 	schema *jsonschema.Schema) *TypeModel {
@@ -477,15 +477,17 @@ func (domain *Domain) Build() {
 	domain.buildAdditionalPropertyAccessors(typeModel, domain.Schema)
 	domain.buildOneOfAccessors(typeModel, domain.Schema)
 	domain.buildAnyOfAccessors(typeModel, domain.Schema)
-	domain.TypeModels[typeName] = typeModel
+	if len(typeModel.Properties) > 0 {
+		domain.TypeModels[typeName] = typeModel
+	}
 
 	// create a type for each object defined in the schema
 	if domain.Schema.Definitions != nil {
 		for _, pair := range *(domain.Schema.Definitions) {
 			definitionName := pair.Name
 			definitionSchema := pair.Value
-			typeName := domain.typeNameForStub(definitionName)
-			typeModel := domain.buildTypeForDefinition(typeName, definitionName, definitionSchema)
+			typeName := domain.TypeNameForStub(definitionName)
+			typeModel := domain.BuildTypeForDefinition(typeName, definitionName, definitionSchema)
 			if typeModel != nil {
 				domain.TypeModels[typeName] = typeModel
 			}

@@ -35,10 +35,8 @@ pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext
     #
     #
     GOOGLE_EXTENSION_SCHEMA="sample/x-google.json"
-    GOOGLE_EXTENSION_PROTO_NAMESPACE="GoogleExtensions"
 
     openapivendorextc $GOOGLE_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR \
-    --proto_option_suffix=$GOOGLE_EXTENSION_PROTO_NAMESPACE \
     --extension_name_to_message=x-book:Book \
     --extension_name_to_message=x-shelve:Shelve \
 
@@ -55,10 +53,8 @@ pushd $GOPATH/src/github.com/googleapis/openapi-compiler/openapivendorext
     #
     #
     IBM_EXTENSION_SCHEMA="sample/x-ibm.json"
-    IBM_EXTENSION_PROTO_NAMESPACE="IbmExtensions"
 
     openapivendorextc $IBM_EXTENSION_SCHEMA --out_dir_relative_to_gopath_src=$EXTENSION_OUT_DIR \
-    --proto_option_suffix=$IBM_EXTENSION_PROTO_NAMESPACE \
     --extension_name_to_message=x-ibm-book:IbmBook \
     --extension_name_to_message=x-ibm-shelve:IbmShelve \
 
